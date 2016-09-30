@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px){
-/*common nav     begin      2016.09.22       written by jennier*/
+/*common nav     begin      2016.09.22       written by jennifer*/
  #zmodo-nav{height: 48px;max-height: none;-webkit-transition:background 0.35s linear,height 0.35s ease-in 200ms;
  transition:background 0.35s linear,height 0.35s ease-in 200ms;}
  .nav-con .nav-link-zmodo{background-repeat:no-repeat;background-size: 307px 125px;background-image:url("../images/icon-iphone.png");
@@ -105,8 +105,18 @@ transition:opacity 0.1s  cubic-bezier(0.645, 0.045, 0.355, 1),transform 0.1s  cu
 .nav-searchview-close-left, .nav-searchview-close-right{width:1px;}
 #zmodo-nav .nav-searchview-close-wrapper{opacity: 0;}
 .nav-searchform-wrapper{border-bottom: 1px solid #fff;}
-/*common nav      end       2016.09.22      written by jennier*/
+/*common nav      end       2016.09.22      written by jennifer*/
 
+/*the home page  on the screen<768     begin      2016.09.30        written by jennifer*/
+ul.press-con-item li.press-list07{display: none;}
+ul.press-con-item li.press-list{width:33.33%;}
+ul.press-con-item li.press-list01{background-position: 0px 0px;}
+ul.press-con-item li.press-list02{background-position: -150px 0px;}
+ul.press-con-item li.press-list03{background-position: -285px 0px;}
+ul.press-con-item li.press-list04{background-position: -421px 0px;}
+ul.press-con-item li.press-list05{background-position: -569px 0px;}
+ul.press-con-item li.press-list06{background-position: -708px 0px;}
+/*the home page  on the screen<768     end      2016.09.30        written by jennifer*/
 }
 @media screen and (max-width: 374px){
 .footer-con .footer-item .footer-share-item{margin-left: 0px;}

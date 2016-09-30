@@ -1,4 +1,4 @@
-/*common nav     begin      2016.09.22       written by jennier*/
+/*common nav     begin      2016.09.22       written by jennifer*/
 #zmodo-nav{position:absolute;top:0;right:0;left:0;z-index:3;display:block;margin:0;width:100%;
 height:48px;max-height:48px;background:#14b8e2;background:rgba(20,184,226);
 -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
@@ -43,8 +43,8 @@ transition:transform 0.25s ease-out;}
 #zmodo-nav{cursor: pointer;}
 .nav-menuicon{cursor: pointer;}
 #zmodo-nav-placeholder{height: 48px;}
-/*common nav       end        2016.09.22        written by jennier*/
-/*common footer on the screen>1023   begin     2016.09.27        written by jennier*/
+/*common nav       end        2016.09.22        written by jennifer*/
+/*common footer on the screen>1023   begin     2016.09.27        written by jennifer*/
 #zmodo-footer{background: #f2f2f2;}
 .footer-con{margin:0 auto;max-width:980px;padding:70px 22px;}
 .footer-con .footer-list{text-align: justify;width:auto;margin:0px  -10px;}
@@ -88,7 +88,42 @@ transition:transform 0.25s ease-out;}
 .footer-con .footer-share-item04 a:hover{background-position: -100px -1px;}
 .footer-con .footer-share-item05 a:hover{background-position: -135px -1px;}
 .footer-con .footer-share-item06 a:hover{background-position: -167px -2px;}
-/*common footer on the screen>1023     end       2016.09.27         written by jennier*/
+/*common footer on the screen>1023     end       2016.09.27         written by jennifer*/
+
+/*the home page  on the screen>1023     begin      2016.09.30        written by jennifer*/
+.banner-box{width:100%;overflow: hidden;position: relative;}
+.banner{width:300%;transform:translate3d(0,0,0);transition:all 0.5s;display: inline-block;}
+.dots{position: absolute;bottom: 20px;width:100%;text-align: center;}
+.banner li{float: left;width:33.33333%;display: inline-block;text-align: center;}
+.banner li a.slide-a{display:inline-block;width:100%;}
+.banner li img{max-width: 100%;width:100%;position: relative;top:0px;left:0px;}
+.dots span.swiper-pagination-bullet{opacity: 1;width:10px;height: 10px;line-height: 10px;border: 1px solid #14b8e2;border-radius:50%;background: transparent;display: inline-block;margin: 0px 5px;}
+.dots span.swiper-pagination-bullet-active{background: #14b8e2;opacity: 1;}
+.dots span{width:10px;height: 10px;line-height: 10px;border: 1px solid #14b8e2;border-radius:50%;background: transparent;display: inline-block;margin: 0px 5px;}
+.dots span:hover{cursor: pointer;}
+.home-banner .swiper-slide01 .banner-btn{margin-left: -84px;position: absolute;top: 13.5rem;}
+.home-banner .swiper-slide .banner-subtit{font-family:"Roboto Thin"!important;font-size: 48px;color:#333;position: absolute;}
+.home-banner .swiper-slide .banner-tit{font-size: 56px;color:#333;position: absolute;}
+.home-banner .swiper-slide01 .banner-subtit{margin-left: -205px;top: 3.5rem;display: inline-block;}
+.home-banner .swiper-slide02 .banner-subtit{margin-left: -9.5rem;top: 12rem;display: inline-block;}
+.home-banner .swiper-slide02 .banner-tit{margin-left: -3.7rem;top: 8rem;display: inline-block;}
+.home-banner .swiper-slide02 .banner-btn{margin-left: -84px;position: absolute;top: 22rem;}
+.home-banner .swiper-slide03 .banner-subtit{margin-left: -12.5rem;top:14rem;display: inline-block;color:#fff;}
+.home-banner .swiper-slide03 .banner-tit{margin-left: -3.7rem;top: 9rem;display: inline-block;color:#fff;}
+.home-banner .swiper-slide03 .banner-btn{margin-left: -84px;position: absolute;top: 24rem;}
+.press{background:#14b8e2;padding: 2.7rem  0rem;cursor: pointer;}
+.press-con{width: 1000px;margin: 0  auto;}
+ul.press-con-item li{display: inline-block;}
+ul.press-con-item li.press-list{width:13.5%;background:url("../images/home/press.png") no-repeat;height: 52px;}
+ul.press-con-item li.press-list01{background-position: 0px 0px;}
+ul.press-con-item li.press-list02{background-position: -150px 0px;}
+ul.press-con-item li.press-list03{background-position: -285px 0px;}
+ul.press-con-item li.press-list04{background-position: -421px 0px;}
+ul.press-con-item li.press-list05{background-position: -569px 0px;}
+ul.press-con-item li.press-list06{background-position: -708px 0px;}
+ul.press-con-item li.press-list07{background-position: -853px 0px;}
+/*the home page  on the screen>1023     end      2016.09.30        written by jennifer*/
+
 
 @media screen and (min-width:769px){
 /*the code which can't   share  width the  screen that=<768px   begin*/
@@ -115,7 +150,7 @@ transition:transform 0.25s ease-out;}
 
 
 @media screen and (max-width:1023px){
-/*common footer on the screen=<1023   begin    2016.09.27      written by jennier*/
+/*common footer on the screen=<1023   begin    2016.09.27      written by jennifer*/
 .footer-con .footer-item-copyright-pc{display: none;}
 .footer-con .footer-link{width:100%;}
 .footer-con .footer-link .footer-item-link-column{width:100%;border-bottom: 1px solid #e3e3e3;height: 3rem;line-height: 3rem;}
@@ -140,5 +175,13 @@ transition:transform 0.25s ease-out;}
 .footer-con .footer-share-item05 a:hover{background-position: -160px -89px;}
 .footer-con .footer-share-item06 a:hover{background-position: -200px -91px;}
 #zmodo-nav,#zmodo-footer{min-width: 320px;}
-/*common footer on the screen=<1023  end      2016.09.27       written by jennier*/
+.press-con{width: 100%;margin: 0  auto;}
+ul.press-con-item li.press-list07{background-position: -861px 0px;}
+/*common footer on the screen=<1023  end      2016.09.27       written by jennifer*/
+}
+
+@media screen and (max-width:960px){
+ul.press-con-item li.press-list05{background-position: -579px 0px;}
+ul.press-con-item li.press-list06{background-position: -747px 0px;}
+ul.press-con-item li.press-list07{background-position: -889px 0px;}
 }
