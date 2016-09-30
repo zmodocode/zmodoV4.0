@@ -2,7 +2,7 @@
 #zmodo-nav{position:absolute;top:0;right:0;left:0;z-index:3;display:block;margin:0;width:100%;
 height:48px;max-height:48px;background:#14b8e2;background:rgba(20,184,226);
 -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
-.nav-con{margin:0 auto;max-width:980px;padding:0 22px;z-index:3;}
+.nav-con{margin:0 auto;max-width:980px;padding:0 22px;z-index:3;position: relative;}
 .nav-con .nav-link{color:#fff;background-repeat: no-repeat;display: inline-block;letter-spacing:normal;opacity:1;
 -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=$ieopacity)';-webkit-transition:opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 transition:opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);-webkit-tap-highlight-color:transparent;}
