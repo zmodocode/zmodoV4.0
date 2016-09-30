@@ -122,6 +122,8 @@ ul.press-con-item li.press-list04{background-position: -421px 0px;}
 ul.press-con-item li.press-list05{background-position: -569px 0px;}
 ul.press-con-item li.press-list06{background-position: -708px 0px;}
 ul.press-con-item li.press-list07{background-position: -853px 0px;}
+.row{width:100%;}
+.row .row-list{display: inline-block;}
 /*the home page  on the screen>1023     end      2016.09.30        written by jennifer*/
 
 

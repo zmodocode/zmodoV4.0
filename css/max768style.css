@@ -109,13 +109,9 @@ transition:opacity 0.1s  cubic-bezier(0.645, 0.045, 0.355, 1),transform 0.1s  cu
 
 /*the home page  on the screen<768     begin      2016.09.30        written by jennifer*/
 ul.press-con-item li.press-list07{display: none;}
-ul.press-con-item li.press-list{width:33.33%;}
-ul.press-con-item li.press-list01{background-position: 0px 0px;}
-ul.press-con-item li.press-list02{background-position: -150px 0px;}
-ul.press-con-item li.press-list03{background-position: -285px 0px;}
-ul.press-con-item li.press-list04{background-position: -421px 0px;}
-ul.press-con-item li.press-list05{background-position: -569px 0px;}
-ul.press-con-item li.press-list06{background-position: -708px 0px;}
+ul.press-con-item li.press-list{width:32%;background:none;}
+.press{padding: 0rem 0rem;background: #14b8e2;}
+.press-con{background:url("../images/home/press-phone.png") no-repeat;background-size: 100%  100%;}
 /*the home page  on the screen<768     end      2016.09.30        written by jennifer*/
 }
 @media screen and (max-width: 374px){
