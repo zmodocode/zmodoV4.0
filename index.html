@@ -33,7 +33,7 @@
 			</ul>
 			<ul class="nav-list  nav-tit">
 				<li class="nav-item nav-item-zmodo">
-					<a href=""  class="nav-link nav-link-zmodo"></a>
+					<a href=""  class="nav-link nav-link-zmodo"><img src="images/home/logo.png" alt=""></a>
 				</li>
 				<li class="nav-item nav-item-menu">
 					<a href=""  class="nav-link">
@@ -117,12 +117,24 @@
 	<div class="press" onclick="javascript:window.location.href='http://www.zmodo.com/press'">
 		<div  class="press-con">
 			<ul class="press-con-item">
-			<li class="press-list press-list01"></li>
-			<li class="press-list press-list02"></li>
-			<li class="press-list press-list03"></li>
-			<li class="press-list press-list04"></li>
-			<li class="press-list press-list05"></li>
-			<li class="press-list press-list06"></li>
+			<li class="press-list press-list01">
+				<img src="images/home/press-icon01.png" alt=""  class="hidden-small">
+			</li>
+			<li class="press-list press-list02">
+				<img src="images/home/press-icon02.png" alt=""  class="hidden-small">
+			</li>
+			<li class="press-list press-list03">
+				<img src="images/home/press-icon03.png" alt=""  class="hidden-small">
+			</li>
+			<li class="press-list press-list04">
+				<img src="images/home/press-icon04.png" alt=""  class="hidden-small">
+			</li>
+			<li class="press-list press-list05">
+				<img src="images/home/press-icon05.png" alt=""  class="hidden-small">
+			</li>
+			<li class="press-list press-list06">
+				<img src="images/home/press-icon06.png" alt=""  class="hidden-small">
+			</li>
 			<li class="press-list press-list07"></li>
 			</ul>
 		</div>
@@ -131,7 +143,10 @@
            <tr class="row row-float-left clearfix row01">
            	<td class="row-list row-list-padding">
            		<div class="row-con">
-           		<div class="row-list-icon"><img src="images/home/12.jpg" alt="" ></div>
+           		<div class="row-list-icon">
+           			<img src="images/home/12.png" alt="" class="hidden-large">
+           			<img src="images/home/12x2.png" alt="" class="hidden-small  home-imgx2">
+           		</div>
            		<p class="row-list-tit">Apartment dweller?</p>
            		<p class="row-list-tit">Small space?</p>
            		<p class="row-list-tit">We've got you covered.</p>
@@ -146,7 +161,8 @@
             <tr class="row row-float-right clearfix">
             	<td class="row-list hidden-small row-list-padding">
            		<div class="row-con">
-           		<div class="row-list-icon"><img src="images/home/08.jpg" alt="" ></div>
+           		<div class="row-list-icon">
+           			<img src="images/home/08x2.png" alt="" class="hidden-small  home-imgx2"></div>
            		 <p class="row-list-tit">Let's start at the front door</p>
                          <p class="row-list-tit">and go from there.</p>
                           <p class="row-list-subtit">
@@ -157,7 +173,7 @@
             	<td class="row-list"><img src="images/home/02.jpg" alt=""  class="row-img"></td>     
             	<td class="row-list  hidden-large">
            		<div class="row-con">
-           		<div class="row-list-icon"><img src="images/home/08.jpg" alt="" ></div>
+           		<div class="row-list-icon"><img src="images/home/08.png" alt="" class="hidden-large"></div>
            		 <p class="row-list-tit">Let's start at the front door</p>
                          <p class="row-list-tit">and go from there.</p>
                           <p class="row-list-subtit">
@@ -208,12 +224,13 @@
            	<td class="row-list"><img src="images/home/05.jpg" alt=""  class="row-img"></td>
            	<td class="row-list"><img src="images/home/06.jpg" alt=""  class="row-img"></td>
            </tr>
-           <tr class="row row-float-left clearfix hidden-small home-replay-phone swiper-container swiper-container-horizontal">
-           	<td>
+           <tr class="row row-float-left clearfix hidden-small">
+           	<td class="home-replay-phone swiper-container swiper-container-horizontal">
            	<ul  class="home-replay-phone-item swiper-wrapper clearfix">
            		<li class="swiper-slide"><a href=""><img src="images/home/13.jpg" alt=""  class="row-img home-replay-phone-list"></a></li>
-           		<li class="swiper-slide"<a href=""><img src="images/home/15.jpg" alt=""  class="row-img home-replay-phone-list"></a></li>
+           		<li class="swiper-slide"><a href=""><img src="images/home/15.jpg" alt=""  class="row-img home-replay-phone-list"></a></li>
            	</ul>
+           	<div class="dots swiper-pagination clearfix swiper-pagination-clickable"></div>
            	</td>
            </tr>
            </table>
@@ -293,7 +310,8 @@
 <script  src="js/swiper.min.js"></script>
 <script  src="js/common.js"></script>
 	<script>
-var screenWidth=$(document).width();
+var $j = jQuery.noConflict();	
+var screenWidth=$j(document).width();
 var loop=new Bannerloop({
             banner:'.banner',
             bars:'.home-banner .dots',

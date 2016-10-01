@@ -2,6 +2,7 @@
  * Created by jenniferma on 2016/7/14.
  */
  // common banner plugin     begin     2016.09.30         written by jennifer
+var $j = jQuery.noConflict();
 function Bannerloop(options){
     var defaultOptions={
         banner:'.banner',
@@ -9,15 +10,15 @@ function Bannerloop(options){
         num:5,
         autoSpeed: 5000
     };
-    this.options= $.extend({},defaultOptions,options||{});
+    this.options= $j.extend({},defaultOptions,options||{});
     this.init();
 
 }
 Bannerloop.prototype={
     init:function(){
         var _this=this;
-        _this.length=$(_this.options.banner+' li').length;
-        _this.dots=$(_this.options.bars);
+        _this.length=$j(_this.options.banner+' li').length;
+        _this.dots=$j(_this.options.bars);
         _this.index=0;
         _this.timer=null;
         if(_this.length-1>0){
@@ -27,19 +28,19 @@ Bannerloop.prototype={
         }
         _this.run();
         _this.auto();
-        $(_this.options.bars+' span,'+_this.options.banner+' li').mouseover(function(){
+        $j(_this.options.bars+' span,'+_this.options.banner+' li').mouseover(function(){
             clearInterval(_this.timer);
         }).mouseout(function(){
             _this.auto();
         });
-        var docWidth=$(document).width();
+        var docWidth=$j(document).width();
         if(docWidth-1000<0){
-            $(_this.options.bars+' span,'+_this.options.banner+' li').on('touchstart  click',function(){
+            $j(_this.options.bars+' span,'+_this.options.banner+' li').on('touchstart  click',function(){
                 clearInterval(_this.timer);                
             })      
         }
-        $(_this.options.bars+' span').click(function(){
-            _this.index=$(this).index();
+        $j(_this.options.bars+' span').click(function(){
+            _this.index=$j(this).index();
             _this.run();
         });
     },
@@ -56,58 +57,58 @@ Bannerloop.prototype={
     },
     run:function(){
         //banner变化的两种展现形式
-        $(this.options.banner).css("transform","translate3d("+(this.index)*(-100)/(this.options.num)+'%'+",0,0)");
-        //$(this.banner+' li').eq(this.index).css("display","block").siblings().css("display","none");
-        $(this.options.bars+' span').eq(this.index).addClass("swiper-pagination-bullet-active").siblings().removeClass("swiper-pagination-bullet-active");
-        $(this.options.banner+' li').eq(this.index).addClass("swiper-slide-active").siblings().removeClass("swiper-slide-active");
-        $(this.options.banner+' li').eq(this.index-1).addClass("swiper-slide-prev").siblings().removeClass("swiper-slide-prev");
-        $(this.options.banner+' li').eq(this.index+1).addClass("swiper-slide-next").siblings().removeClass("swiper-slide-next");
+        $j(this.options.banner).css("transform","translate3d("+(this.index)*(-100)/(this.options.num)+'%'+",0,0)");
+        //$j(this.banner+' li').eq(this.index).css("display","block").siblings().css("display","none");
+        $j(this.options.bars+' span').eq(this.index).addClass("swiper-pagination-bullet-active").siblings().removeClass("swiper-pagination-bullet-active");
+        $j(this.options.banner+' li').eq(this.index).addClass("swiper-slide-active").siblings().removeClass("swiper-slide-active");
+        $j(this.options.banner+' li').eq(this.index-1).addClass("swiper-slide-prev").siblings().removeClass("swiper-slide-prev");
+        $j(this.options.banner+' li').eq(this.index+1).addClass("swiper-slide-next").siblings().removeClass("swiper-slide-next");
     }
 }
  // common banner plugin      end     2016.09.30         written by jennifer
 
  // common head  and  foot    begin     2016.09.30         written by jennifer
-var screenWidth=$(document).width();
+var screenWidth=$j(document).width();
            if(screenWidth-768>0){
-          $(".nav-link-search").click(function(){
-                     if($("#zmodo-nav").hasClass("searchshow")){
-                     $("#zmodo-nav").removeClass("searchshow");                    
+          $j(".nav-link-search").click(function(){
+                     if($j("#zmodo-nav").hasClass("searchshow")){
+                     $j("#zmodo-nav").removeClass("searchshow");                    
         }else{
-                     $("#zmodo-nav").addClass("searchshow");
-                     $(".nav-searchform-input").focus();    
+                     $j("#zmodo-nav").addClass("searchshow");
+                     $j(".nav-searchform-input").focus();    
         }   
           });
-          $(".nav-searchview-close").click(function(){
-                     $("#zmodo-nav").removeClass("searchshow"); 
+          $j(".nav-searchview-close").click(function(){
+                     $j("#zmodo-nav").removeClass("searchshow"); 
           });         
-    $(".footer-share-item07").mouseover(function(){
-           $(".footer-con .footer-share-item06 a").css("background-position","-167px -2px");
+    $j(".footer-share-item07").mouseover(function(){
+           $j(".footer-con .footer-share-item06 a").css("background-position","-167px -2px");
     }).mouseout(function(){
-           $(".footer-con .footer-share-item06 a").css("background-position","-167px -45px")
+           $j(".footer-con .footer-share-item06 a").css("background-position","-167px -45px")
     });
            }
     if(screenWidth-768<=0){
-    $(".nav-menuicon-label").click(function(){
-        if($("#zmodo-nav").hasClass("nav-active")){
-                     $("#zmodo-nav").removeClass("nav-active").removeClass("searchshow"); 
+    $j(".nav-menuicon-label").click(function(){
+        if($j("#zmodo-nav").hasClass("nav-active")){
+                     $j("#zmodo-nav").removeClass("nav-active").removeClass("searchshow"); 
         }else{
-                     $("#zmodo-nav").addClass("nav-active");    
+                     $j("#zmodo-nav").addClass("nav-active");    
         }           
     });
-    $(".nav-search-placeholder").click(function(){
-        if($("#zmodo-nav").hasClass("nav-active")&&!$(".nav-searchview").hasClass("searchshow")){
-                     $("#zmodo-nav").addClass("searchshow");
-                     $(".nav-searchform-input").focus();    
+    $j(".nav-search-placeholder").click(function(){
+        if($j("#zmodo-nav").hasClass("nav-active")&&!$j(".nav-searchview").hasClass("searchshow")){
+                     $j("#zmodo-nav").addClass("searchshow");
+                     $j(".nav-searchform-input").focus();    
         }
     })  
 }
-           $(".nav-searchform-submit").click(function(e){
+           $j(".nav-searchform-submit").click(function(e){
                      e.preventDefault();
-                      if(!$.trim($(".searchshow .nav-searchform-input").val())){
-                      $(".searchshow .nav-searchform-input").focus();       
-                      $(".searchshow .nav-searchform-input").attr("placeholder","");
+                      if(!$j.trim($j(".searchshow .nav-searchform-input").val())){
+                      $j(".searchshow .nav-searchform-input").focus();       
+                      $j(".searchshow .nav-searchform-input").attr("placeholder","");
                       }else{
-                        $("#nav-search-form").submit();
+                        $j("#nav-search-form").submit();
                       }
           });
  // common head  and  foot  end    2016.09.30         written by jennifer           

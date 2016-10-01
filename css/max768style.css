@@ -84,7 +84,6 @@ transition:opacity 0.35s ease-out, transform 0.35s ease-out, -webkit-transform 0
 #zmodo-nav .nav-searchview-close-right{-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);}
 .nav-searchview-con{opacity: 0;}
 .nav-searchform-submit{top:0px;}
-/*#zmodo-nav.nav-active .nav-searchview{display: none;}*/
 #zmodo-nav  .nav-list{transform:translateY(0px);}
 #zmodo-nav  .nav-searchview-con{transform:translateY(0px);}
 #zmodo-nav.nav-active  .nav-searchview-con{transform:translateY(-5px);}
@@ -96,8 +95,6 @@ transition:opacity 0.35s ease-out, transform 0.35s ease-out, -webkit-transform 0
 #zmodo-nav.nav-active.searchshow .nav-searchview-con{opacity: 1;-webkit-transition:opacity 0.2s  cubic-bezier(0.645, 0.045, 0.355, 1),transform 0.2s  cubic-bezier(0.645, 0.045, 0.355, 1);
 transition:opacity 0.2s  cubic-bezier(0.645, 0.045, 0.355, 1),transform 0.2s  cubic-bezier(0.645, 0.045, 0.355, 1);
 transform:translateY(0px);}
-/*#zmodo-nav.nav-active.searchshow .nav-zmodo{opacity: 0;transform:translateY(-30px);-webkit-transition:opacity 0.1s  cubic-bezier(0.645, 0.045, 0.355, 1),transform 0.1s  cubic-bezier(0.645, 0.045, 0.355, 1);
-transition:opacity 0.1s  cubic-bezier(0.645, 0.045, 0.355, 1),transform 0.1s  cubic-bezier(0.645, 0.045, 0.355, 1);}*/
 #zmodo-nav.nav-active.searchshow  .nav-list{transform:translateY(-350px);transition:transform 0.1s  cubic-bezier(0.645, 0.045, 0.355, 1);
 -webkit-transform:translateY(-350px);-webkit-transition:-webkit-transform 0.1s  cubic-bezier(0.645, 0.045, 0.355, 1);
 -ms-transform:translateY(-350px);-ms-transition:-ms-transform 0.1s  cubic-bezier(0.645, 0.045, 0.355, 1);}
@@ -108,10 +105,10 @@ transition:opacity 0.1s  cubic-bezier(0.645, 0.045, 0.355, 1),transform 0.1s  cu
 /*common nav      end       2016.09.22      written by jennifer*/
 
 /*the home page  on the screen<768     begin      2016.09.30        written by jennifer*/
+ul.press-con-item li.press-list{background:none;}
 ul.press-con-item li.press-list07{display: none;}
-ul.press-con-item li.press-list{width:32%;background:none;}
+ul.press-con-item li.press-list{width:32.33%;height: auto;text-align: center;}
 .press{padding: 0rem 0rem;background: #14b8e2;}
-.press-con{background:url("../images/home/press-phone.png") no-repeat;background-size: 100%  100%;}
 /*the home page  on the screen<768     end      2016.09.30        written by jennifer*/
 .row .row-list{width:100%;text-align: center;}
 .row-float-left  .row-con{float: none;}
@@ -133,8 +130,23 @@ ul.press-con-item li.press-list{width:32%;background:none;}
 .home-replay-phone-item li{float: left;width:50%;display: inline-block;text-align: center;}
 .home-replay-phone-item li a.slide-a{display:inline-block;width:100%;}
 .home-replay-phone-item li img{max-width: 100%;width:100%;position: relative;top:0px;left:0px;}
+.home-replay-phone td{overflow: hidden;position: relative;}
+.home-replay-phone td a{display: inline-block;}
+ul.press-con-item li.press-list01{margin-bottom: 2rem;}
+ul.press-con-item li.press-list02{margin-bottom: 2rem;}
+ul.press-con-item li.press-list03{margin-bottom: 2rem;}
+ul.press-con-item li.press-list{height: 56px;}
+ul.press-con-item li.press-list img{width:50%;}
+.press-con{padding: 2rem 0rem  2rem 0rem;}
+.home-imgx2{width:7rem;}
 }
-@media screen and (max-width: 374px){
+@media screen and (max-width: 500px){
+ul.press-con-item li.press-list{height: 37px;}
+}
+@media screen and (max-width: 414px){
+ul.press-con-item li.press-list{height: 30px;}
+}
+@media screen and (max-width: 375px){
 .footer-con .footer-item .footer-share-item{margin-left: 0px;}
 .footer-con .footer-item .footer-share-item06{margin-left: 0px;}
 .footer-con .footer-share-item07{width:auto;}
