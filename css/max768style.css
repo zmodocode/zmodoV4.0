@@ -113,6 +113,26 @@ ul.press-con-item li.press-list{width:32%;background:none;}
 .press{padding: 0rem 0rem;background: #14b8e2;}
 .press-con{background:url("../images/home/press-phone.png") no-repeat;background-size: 100%  100%;}
 /*the home page  on the screen<768     end      2016.09.30        written by jennifer*/
+.row .row-list{width:100%;text-align: center;}
+.row-float-left  .row-con{float: none;}
+.row01 .row-con{margin-right: 0rem;}
+.row-float-right  .row-con{float: none;margin-left: 0rem;}
+.row .row-list.hidden-large{display: none;}
+.row02 .row-con{margin-right: 0rem;}
+.row  .row-list-tit{font-size: 1.8rem;line-height: 2rem;}
+.row-list-padding{padding: 4rem 0rem;}
+.home-banner .swiper-slide01 .banner-btn{margin-left: -4rem;}
+.home-banner .swiper-slide{background:none;height:auto;position: relative;}
+.home-banner .swiper-slide01 .banner-subtit{font-size: 2rem;position: absolute;left:50%;margin-left: -8rem;}
+.home-banner .swiper-slide01 .banner-btn{top:9.5rem;}
+.footer-con .footer-item-subscribe .foot-btn{top: 9px;}
+.home-main-table .row-list.hidden-small{display: block;}
+.home-replay-phone{width:100%;overflow: hidden;position: relative;}
+.home-replay-phone-item{width:200%;transform:translate3d(0,0,0);transition:all 0.5s;display: inline-block;}
+.dots{position: absolute;bottom: 20px;width:100%;text-align: center;}
+.home-replay-phone-item li{float: left;width:50%;display: inline-block;text-align: center;}
+.home-replay-phone-item li a.slide-a{display:inline-block;width:100%;}
+.home-replay-phone-item li img{max-width: 100%;width:100%;position: relative;top:0px;left:0px;}
 }
 @media screen and (max-width: 374px){
 .footer-con .footer-item .footer-share-item{margin-left: 0px;}

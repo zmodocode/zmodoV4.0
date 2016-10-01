@@ -23,28 +23,6 @@ select{font-size:inherit;vertical-align:middle;outline: none;}
 /*补充公用class类  end*/
 
 /*网站字体、字号、颜色 begin*/
-/*@font-face{
-	font-family: 'Roboto-Light';
-	src: url('../fonts/Roboto-Light.eot');
-	src: url('../fonts/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light.ttf') format('truetype'), url('../fonts/Roboto-Light.svg') format('svg');
-	font-style: normal;
-	  font-weight: 100;
-}
-
-@font-face{
-	font-family: 'Roboto-Medium';
-	src: url('../fonts/Roboto-Medium.eot');
-	src: url('../fonts/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium.ttf') format('truetype'), url('../fonts/Roboto-Medium.svg') format('svg');
-	  font-weight: 100;
-	font-style: normal;
-}
-@font-face{
-	font-family: 'Roboto-Thin';
-	src: url('../fonts/Roboto-Thin.eot');
-	src: url('../fonts/Roboto-Thin.woff') format('woff'), url('../fonts/Roboto-Thin.ttf') format('truetype'), url('../fonts/Roboto-Thin.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}*/
 @font-face {
   font-family: 'Roboto Thin';
   font-style: normal;
@@ -86,15 +64,18 @@ a:hover,a:visited,a:active{text-decoration:none;}
 html{font-size: 20px; }
 .common-btn{width:166px;height: 46px;background: #14b8e2;font-size: 16px;
 font-family:"Roboto Medium"!important;text-align: center;line-height: 46px;display: inline-block;color:#fff;border-radius: 23px;}
-
+.hidden-small{display: none;}
 }
 /* 768px到999px   */
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width:769px) and (max-width:1023px) {
 html{font-size: 18px;}
 .nav-con{font-size: 0.86rem;}
 .footer-con{color:#333333;font-size: 0.86rem;}
 .footer-con a{color:#333333;}
 .footer-con a:hover{color:#333333;}
+.hidden-small{display: none;}
+.common-btn{width:166px;height: 46px;background: #14b8e2;font-size: 16px;
+font-family:"Roboto Medium"!important;text-align: center;line-height: 46px;display: inline-block;color:#fff;border-radius: 23px;}
 }
 /*768px以下  iphone 6p  iphone 6sp  iphone 7p*/
 @media screen and (max-width:768px) {
@@ -103,6 +84,9 @@ html{font-size: 16px; }
 .footer-con{color:#333333;font-size: 0.86rem;}
 .footer-con a{color:#333333;width:100%;display: inline-block;}
 .footer-con a:hover{color:#333333;}
+.hidden-large{display: none;}
+.common-btn{width:8rem;height:3rem;background: #14b8e2;font-size:1.0rem;
+font-family:"Roboto Medium"!important;text-align: center;line-height:3rem;display: inline-block;color:#fff;border-radius: 23px;}
 }
 /* iphone 6   iphone 6s  iphone 7*/
 @media screen and (max-width:375px) {
