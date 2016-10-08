@@ -70,6 +70,12 @@ Bannerloop.prototype={
  // common head  and  foot    begin     2016.09.30         written by jennifer
 var screenWidth=$j(document).width();
            if(screenWidth-768>0){
+            $j(".nav-products,.nav-link-product").mouseover(function(){
+           $j(".nav-products").addClass("nav-products-show");
+           });
+          $j(".nav-products,.nav-link-product").mouseleave(function(){
+          $j(".nav-products").removeClass("nav-products-show");
+           });
           $j(".nav-link-search").click(function(){
                      if($j("#zmodo-nav").hasClass("searchshow")){
                      $j("#zmodo-nav").removeClass("searchshow");                    
@@ -93,14 +99,27 @@ var screenWidth=$j(document).width();
                      $j("#zmodo-nav").removeClass("nav-active").removeClass("searchshow"); 
         }else{
                      $j("#zmodo-nav").addClass("nav-active");    
-        }           
+        }    
+        if($j(".nav-item-product").hasClass("nav-item-menu-show")){
+                     $j(".nav-item-product").removeClass("nav-item-menu-show");
+        }       
     });
     $j(".nav-search-placeholder").click(function(){
         if($j("#zmodo-nav").hasClass("nav-active")&&!$j(".nav-searchview").hasClass("searchshow")){
                      $j("#zmodo-nav").addClass("searchshow");
                      $j(".nav-searchform-input").focus();    
         }
-    })  
+         if($j(".nav-item-product").hasClass("nav-item-menu-show")){
+                     $j(".nav-item-product").removeClass("nav-item-menu-show");
+        }    
+    });
+    $j('.nav-link-product').parent().on("click",function(){
+            if(!$j(this).hasClass("nav-item-menu-show")){
+            $j(this).addClass("nav-item-menu-show");
+            }else{
+             $j(this).removeClass("nav-item-menu-show");
+           }
+           });
 }
            $j(".nav-searchform-submit").click(function(e){
                      e.preventDefault();
