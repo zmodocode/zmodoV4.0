@@ -235,6 +235,7 @@ background-color:#14b8e2;text-align: center;font-size: 1.1rem;color:#fff;border-
 .pivot-part12 .pivot-part12-table tr td.name  span{margin-left: 0px;float: none;}
 .pivot-part12 .pivot-part12-table tr td.name{width:20%;text-align: center;}
 .pivot-part12 .pivot-part12-table tr td.name  h3{margin-left: 0px;float: none;}
+.pivot-part11-exp-icon{background: url(../images/down-arrow.png);background-position: 0px 0px;}
 /*the pivot page  on the screen<768     end      2016.10.08        written by jennifer*/
 }
 @media screen and (max-width: 500px){
