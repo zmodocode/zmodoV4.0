@@ -75,6 +75,9 @@ color:#fff;font-size: 0.9rem;text-align: center;margin-right: 25px;}
 border-left: 12px solid #ffffff;border-bottom: 9px solid #1cc7e9;margin: 8px 0px 0px 5px;}
 .explore-con{display: none;}
 .explore-con-phone{display: none;}
+.parametric-main-tit{font-size: 1.4rem;line-height: 1.5rem;color: #333;}
+.parametric-sub-tit{font-size: 0.9rem;line-height: 1rem;color:#666;}
+
 /*the common "class" in the website  end    by jennifer 2016.10.08 */
 
 /* 1000px以上 */
@@ -134,6 +137,7 @@ html{font-size: 12px; }
 .footer-con{color:#333333;font-size: 0.86rem;}
 .footer-con a{color:#333333;}
 .footer-con a:hover{color:#333333;}
+.common-btn{width:9rem;}
 }
 /*网站字体、字号、颜色 end*/
 

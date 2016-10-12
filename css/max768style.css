@@ -249,6 +249,24 @@ background-color:#14b8e2;text-align: center;font-size: 1.1rem;color:#fff;border-
 .greet-part06 .inside-page-con{position: absolute;left:0px;top:2rem;text-align: center;}
 .greet-part07 .inside-page-con{position: absolute;left:0px;top:2rem;text-align: center;}
 .greet-part07 img{padding-top: 12rem;}
+.greet-part05-list{height: auto;}
+.greet-part05-item{height: auto;}
+.greet-part05 .inside-page-con,.greet-part05 .inside-page-con .maintitle{text-align: left;}
+.greet-part05-item{float: none;width:100%;height: 74px;}
+.greet-part05-item span{width:60px;height:74px;display: inline-block;background: url(../images/greet/24.png) no-repeat;background-size: 60px 208px; }
+.greet-part05-item p{float: right;width:80%;margin-top:12px;}
+.greet-part05-item02 p{float: right;width:80%;margin-top:18px;}
+.greet-part05 .inside-page-con .subtitle{margin-bottom: 3.5rem;}
+.greet-part05-item01 span{background-position: 0px 0px;}
+.greet-part05-item02 span{background-position: 0px -74px;}
+.greet-part05-item03 span{background-position: 0px -150px;}
+.product-greet{margin-top: -0.3rem;}
+.greet-part08-item{width:100%;float: none;}
+.greet-part08-item .area{float: left;margin-bottom: 0rem;}
+.greet-part08-item .txt{float: left;width:73%;margin-top: 1.0rem;}
+.greet-part08-item p{width: 100%;}
+.greet-part08-item02 .txt{margin-top: 0.5rem;}
+.greet-part08-item .parametric-main-tit{margin-bottom: 0.3rem;}
 /*the greet page  on the screen<768     end      2016.10.12        written by jennifer*/
 }
 @media screen and (max-width: 500px){
@@ -257,6 +275,7 @@ ul.press-con-item li.press-list{height: 37px;}
 @media screen and (max-width: 414px){
 ul.press-con-item li.press-list{height: 30px;}
 .product-pivot.pivot-part01 .banner-maintitle{padding-top: 0rem;}
+.greet-part08-item .txt{width:70%;}
 }
 @media screen and (max-width: 375px){
 .footer-con .footer-item .footer-share-item{margin-left: 0px;}
@@ -267,4 +286,5 @@ ul.press-con-item li.press-list{height: 30px;}
 .pivot-part10-btn{width:18rem;}
 .pivot-part10 .inside-page-con{padding: 0px;}
 .pivot-part10-btn li a p{line-height: 10px;}
+.greet-part08-item .txt{width:65%;}
 }
