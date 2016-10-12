@@ -369,14 +369,7 @@
      })
 // the animation of the tenth screen on the pc  end  until  2016.10.09  written by jennifer
 // the animation of the twelfth screen on the pc  begin from  2016.10.09  written by jennifer
-     $j(".pivot-part11-btn").click(function () {
-         $j(".pivot-part12-table").toggle();
-         if ($j(".pivot-part11-exp-icon").hasClass("arrow-down")) {
-             $j(".pivot-part11-exp-icon").removeClass("arrow-down");
-         } else {
-             $j(".pivot-part11-exp-icon").addClass("arrow-down");
-         }
-     })
+     
  })
  // the animation of the twelfth screen on the pc  end  until  2016.10.09  written by jennifer
  // the animation of the fourth screen<1024  begin from  2016.10.09  written by jennifer

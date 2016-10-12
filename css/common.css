@@ -73,6 +73,8 @@ color:#fff;font-size: 0.9rem;text-align: center;margin-right: 25px;}
 .watch-video-icon-arrow{display:inline-block;width: 0;height: 0;border-top: 9px solid transparent;border-left: 12px solid #1cc7e9;border-bottom: 9px solid transparent;margin: 8px 0px 0px 4px;}
 .watch-video-icon.wvi-active .watch-video-icon-arrow{border-top: 9px solid #1cc7e9;
 border-left: 12px solid #ffffff;border-bottom: 9px solid #1cc7e9;margin: 8px 0px 0px 5px;}
+.explore-con{display: none;}
+.explore-con-phone{display: none;}
 /*the common "class" in the website  end    by jennifer 2016.10.08 */
 
 /* 1000px以上 */

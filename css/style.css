@@ -313,6 +313,24 @@ float: left;margin-left: 10px;margin-top: 3px;}
 .pivot-part12 .pivot-part12-table tr td  .bit-detail{margin-top: 15px;width:20rem;display: none;}
 .pivot-part12 .pivot-part12-table{margin-top: 2rem;}
 /*the pivot page  on the screen>1023     end      2016.10.08       written by jennifer*/
+/*the greet page  on the screen>1023     begin      2016.10.08        written by jennifer*/
+.greet-part01{color:#fff;}
+.greet-part02 .inside-page-con .maintitle{text-align: left;color:#060606;}
+.greet-part02 .inside-page-con .maintitle{color:#000000;}
+.greet-part03 .inside-page-con .subtitle,.greet-part03 .inside-page-con .maintitle{color:#fff;text-align: center;}
+.greet-part04 .inside-page-con{text-align: center;}
+.greet-part09-con{width:200px;margin:0 auto;text-align: center;}
+.greet-part05-list{width: 930px;}
+.greet-part05-item{width:306px;height:330px;float: left;}
+.greet-part05-item span{width:306px;height:180px;display: inline-block;}
+.greet-part05-item p{width:165px;color:#fff;}
+.greet-part05-item01{text-align: left;}
+.greet-part05-item02{text-align: center;}
+.greet-part05-item03{text-align: right;}
+.greet-part05-item01 span{background: url(../images/greet/17.png) no-repeat 0px 0px;}
+.greet-part05-item02 span{background: url(../images/greet/17.png) no-repeat -393px 0px;}
+.greet-part05-item03 span{background: url(../images/greet/17.png) no-repeat -735px 0px;}
+/*the greet page  on the screen>1023    end      2016.10.08        written by jennifer*/
 @media screen and (min-width:769px){
 /*the code which can't   share  width the  screen that=<768px   begin*/
 #zmodo-nav  .nav-con .nav-item-menu{opacity: 1;-webkit-transition:opacity 0.25s ease-out;transition:opacity 0.25s ease-out;}
@@ -334,6 +352,30 @@ float: left;margin-left: 10px;margin-top: 3px;}
 .nav-searchview-close-right{left:12px;}
 .nav-searchform-submit{background: url("../images/header-icon-pc.png") no-repeat  0px 16px;width:17.5px;height: 48px;background-size: 43px 23px;}
 /*the code which can't share  width the  screen that=<768px   end*/
+/*the greet page  on the screen>1023     begin      2016.10.08        written by jennifer*/
+.greet-part01 .inside-page-con{padding-top: 10rem;}
+.greet-part01 .banner-subtitle{width:35%;}
+.greet-part01{background: url(../images/greet/01.jpg) no-repeat center center;width:100%;height: 874px;}
+.greet-part02{background: url(../images/greet/02.jpg) no-repeat center center;width:100%;height:1000px;}
+.greet-part03{background: url(../images/greet/03.jpg) no-repeat center center;width:100%;height:1000px;}
+.greet-part04{background: url(../images/greet/04.jpg) no-repeat center center;width:100%;height:998px;}
+.greet-part05{background: url(../images/greet/16.jpg) no-repeat center center;width:100%;height:996px;}
+.greet-part06{background: url(../images/greet/05.jpg) no-repeat center center;width:100%;height:1000px;}
+.greet-part02 .subtitle{width:43%;}
+.greet-part02 .inside-page-con{padding-top: 11rem;}
+.greet-part03 .inside-page-con .subtitle,.greet-part03 .inside-page-con .maintitle{width:75%;margin-left:auto;margin-right: auto;}
+.greet-part03 .inside-page-con{padding-top: 7rem;}
+.greet-part04 .inside-page-con .maintitle{padding-top: 8rem;}
+.greet-part04 .inside-page-con .subtitle,.greet-part04 .inside-page-con .maintitle{color:#fff;width:36%;text-align: center;margin-left:auto;margin-right: auto;}
+.greet-part06 .inside-page-con .subtitle,.greet-part06 .inside-page-con .maintitle{color:#333;width:73%;text-align: center;margin-left:auto;margin-right: auto;}
+.greet-part06 .inside-page-con .maintitle{padding-top: 6rem;}
+.greet-part05 .inside-page-con .subtitle,.greet-part05 .inside-page-con .maintitle{color:#fff;width:77%;text-align: center;margin-left:auto;margin-right: auto;}
+.greet-part05 .inside-page-con .maintitle{padding-top: 6rem;}
+.greet-part07-left{float: left;width:40%;padding-top: 8rem;}
+.greet-part07-left .subtitle{margin-bottom: 2.5rem;}
+.greet-part07-right{float: right;padding-top: 6rem;}
+.greet-part07 .inside-page-con{padding-bottom: 3rem;}
+/*the greet page  on the screen>1023    end      2016.10.08        written by jennifer*/
 }
 
 @media screen and (max-width:1500px){
