@@ -267,7 +267,37 @@ background-color:#14b8e2;text-align: center;font-size: 1.1rem;color:#fff;border-
 .greet-part08-item p{width: 100%;}
 .greet-part08-item02 .txt{margin-top: 0.5rem;}
 .greet-part08-item .parametric-main-tit{margin-bottom: 0.3rem;}
+.greet-part08{background: #f7f7f7;padding: 1rem 0rem 7rem 0rem;}
+.greet-part10 .subtitle,.greet-part10 .maintitle{width: 86%;text-align: center;margin-left: 7%;}
 /*the greet page  on the screen<768     end      2016.10.12        written by jennifer*/
+/*the beam page  on the screen<768     begin from      2016.10.12        written by jennifer*/
+.beam-part01{position: relative;}
+.beam-part01 .beam-part01-inside-page-con{position: static;}
+.beam-part01 .inside-page-con{position: absolute;left:0px;top:48px;}
+.beam-part02{position: relative;}
+.beam-part02 .inside-page-con{position: absolute;left:0px;top:48px;}
+.beam-part02 .maintitle{padding-top: 0rem;}
+.beam-part02 .maintitle,.beam-part02 .subtitle{text-align: left;}
+.beam-part03{position: relative;color:#fff;}
+.beam-part03 .maintitle,.beam-part03 .subtitle{color:#fff;}
+.beam-part03 .inside-page-con{position: absolute;left:0px;top:48px;}
+.beam-part03-inside-page-con{position: absolute;left: 1rem;top: 0rem;}
+.beam-part04-phone{width:100%;overflow: hidden;}
+.beam-part04-swipper{width:300%;}
+.beam-part04-slide{width:33.3333%;float: left;}
+.beam-part04 .inside-page-con{z-index: 4;}
+.beam-part04 .subtitle, .beam-part04 .maintitle{width:100%;}
+.beam-part04 .beam-part04-con{width:46%;}
+.beam-part05{position: relative;}
+.beam-part05 .inside-page-con{position: absolute;left:0px;top:48px;}
+.beam-part05 .maintitle{padding-top: 0rem;}
+.beam-part05 .maintitle,.beam-part05 .subtitle{text-align: center;}
+.beam-part06{position: relative;}
+.beam-part06 .inside-page-con{position: absolute;left:0px;top:26px;}
+.beam-part06-inside-page-con{width:82%;text-align: center;margin: 0 auto;}
+.beam-part06 .maintitle,.beam-part06 .subtitle{text-align: center;}
+
+/*the beam page  on the screen<768     end until     2016.10.12        written by jennifer*/
 }
 @media screen and (max-width: 500px){
 ul.press-con-item li.press-list{height: 37px;}
