@@ -143,6 +143,52 @@
 		<p class="subtitle">Record a voice message for your visitors when you don't want to or can't answer a call.</p>	
 	        </div>
 	</section>
+	<section class="product-greet greet-part10">		
+	        <div class="swiper-container">
+	        <ul class="swiper-wrapper greet-part10-swipper">
+		<li class="swiper-slide greet-part10-slide greet-part10-slide01">                             
+			<img src="images/greet/26.jpg" alt="" width="100%" class="hidden-large">
+			<img src="images/greet/29.jpg" alt="" width="100%" class="hidden-small">
+			<div class="inside-page-con">
+		          <p class="maintitle">How it works</p>
+		          <p class="subtitle">A visitor rings Greet, and you will receive a call on your smartphone.</p>	
+	                     </div>
+		</li>
+		<li class="swiper-slide greet-part10-slide greet-part10-slide02">			
+			<img src="images/greet/27.jpg" alt="" width="100%" class="hidden-large">
+			<img src="images/greet/30.jpg" alt="" width="100%" class="hidden-small">
+			<div class="inside-page-con">
+		          <p class="maintitle">How it works</p>
+		          <p class="subtitle">Pick up the call, ignore it, or play a pre-recorded message.</p>	
+	                     </div>
+		</li>
+		<li class="swiper-slide greet-part10-slide greet-part10-slide03">
+			<img src="images/greet/28.jpg" alt="" width="100%" class="hidden-large">
+			<img src="images/greet/31.jpg" alt="" width="100%" class="hidden-small">
+			<div class="inside-page-con">
+		          <p class="maintitle">How it works</p>
+		          <p class="subtitle">If you miss the call, Greet will automatically play your pre-recorded message for
+				your visitor. You can view the missed call at any time from your smartphone.</p>	
+	                     </div>
+		</li>
+	       </ul>
+	       <div class="dots  swiper-pagination clearfix"></div>
+	       </div>
+	</section>
+	<section class="product-greet greet-part06">
+		<img src="images/greet/13.jpg" alt=""  class="hidden-small  bg-phone">
+		<div class="inside-page-con">
+		<p class="maintitle">Pan to get the best angle.</p>
+		<p class="subtitle">Greet allows you to adjust your viewing angle from within the app so that you can see visitors from anywhere on your porch.</p>	
+		<div class="greet-part06-iphone hidden-large">
+			<div class="greet-part06-window">
+				<div class="greet-part06-top"></div>
+				<div class="greet-part06-bg" id="greet-part06-bg"></div>
+				<div class="greet-part06-bottom"></div>
+			</div>
+		</div>
+	        </div>
+	</section>	
 	 <section class="product-greet greet-part05">	 	
 	 	<img src="images/greet/14.jpg" alt=""  class="hidden-small  bg-phone">
 		<div class="inside-page-con">
@@ -165,15 +211,7 @@
 		</ul>
 
 	        </div>
-	 </section>	
-	<section class="product-greet greet-part06">
-		<img src="images/greet/13.jpg" alt=""  class="hidden-small  bg-phone">
-		<div class="inside-page-con">
-		<p class="maintitle">Pan to get the best angle.</p>
-		<p class="subtitle">Greet allows you to adjust your viewing angle from within the app so that you can see visitors from anywhere on your porch.</p>	
-	        </div>
-	</section>	
-		
+	 </section>				
 	<section class="product-greet greet-part07">
 		<img src="images/greet/21.jpg" alt=""  class="hidden-small  bg-phone">
 		<div class="inside-page-con clearfix">
@@ -225,7 +263,7 @@
 					<p class="parametric-main-tit hidden-large">See Your <br>Whole Porch</p>
 					<p class="parametric-main-tit hidden-small">See Your Whole Porch</p>
 					<p class="parametric-sub-tit">
-						With a 155° horizontal angle of view, you can digitally pan to see your visitor no matter where they're standing.
+						With a 155째 horizontal angle of view, you can digitally pan to see your visitor no matter where they're standing.
 					</p>
 				</div>
 			</li>
@@ -257,9 +295,9 @@
 			<img src="images/greet/23.png" alt="" class="hidden-small bg-phone">
 			<div class="greet-part09-con">
 			<a href="" class="common-btn">Buy Now</a>
-			<a href="javascript:" class="pivot-part11-btn explore-btn">
-				<p class="pivot-part11-exp-txt">Explore the Specs</p>
-				<span class="pivot-part11-exp-icon arrow-down  arrow-down-icon"></span>
+			<a href="javascript:" class=" explore-btn">
+				<p >Explore the Specs</p>
+				<span class=" arrow-down  arrow-down-icon"></span>
 			</a>
 			</div>
 			<img src="images/greet/07.jpg" alt="" class="hidden-large explore-con" width="100%">			
@@ -340,10 +378,9 @@
 		</div>
 	</footer>
 <script  src="js/jquery.min.js"></script>
-<script  src="js/plugin/swiper.min.js"></script>
-<script  src="js/plugin/jquery.artDialog.js"></script>
-<script  src="js/plugin/jquery.transit.min.js"></script>
 <script  src="js/common.js"></script>
+<script  src="js/plugin/swiper.min.js"></script>
+
 <script>
 	 var screenWidth = $j(document).width();
      if (screenWidth - 768 > 0) {
@@ -408,6 +445,102 @@
              player.stopVideo();
          });
      }
+     // var loopGreet=new Bannerloop({
+     //        banner:'.greet-part10-swipper',
+     //        bars:'.greet-part10 .dots',
+     //        num:3,
+     //        autoSpeed: 3000
+     //        });        
+      var mySwiperpress = new Swiper('.greet-part10 .swiper-container', {
+             pagination: '.greet-part10 .swiper-pagination',
+             grabCursor: true,
+             paginationClickable: true,
+             paginationType: 'bullets'
+         });
+
+
+function coord(event) {
+		var e = event || window.event;
+		var x = e.pageX;
+		var y = e.pageY;
+		if (!e.pageY) {
+			y = e.clientY + document.documentElement.scrollTop || document.body.scrollTop;
+		}
+		if (!e.pageX) {
+			x = e.clientX + document.documentElement.scrollLeft || document.body.scrollLeft;
+		}
+		return {
+			x: x,
+			y: y
+		}
+	}
+ $j(".greet-part06 .greet-part06-window").bind("mousedown", function (e) {	
+		var str=$j(".greet-part06-bg").css("left");// the original location of the background image
+		var originLeft=Number(str.substring(0,str.length-2));//clear px 
+		var originX = coord(e).x;	//鼠标的原始位置
+		//If you move the mouse to the left then the background image move  to the left, then the  background image move to the left
+		$j(document).bind("mousemove",function(e){
+			e.preventDefault();   
+			var latestX = coord(e).x;
+			var offsetX=latestX-originX;   //Analyzing the mouse  move to the left or to the right
+			//the original position of the background image and the direction of movement of the mouse determines the future background
+			//when the mouse move to the right
+			if(offsetX>0){
+                               if(originLeft==0){
+                               	$j(".greet-part06-bg").css({"left":"190px","top": "58px"});
+                               }
+                               if(originLeft<=190&&originLeft>0){
+                               	$j(".greet-part06-bg").css({"left":"380px","top": "58px"});
+                               }
+                               if(originLeft<=380&&originLeft>190){
+                               	$j(".greet-part06-bg").css({"left":"572px","top": "58px"});
+                               }
+                                if(originLeft<=572&&originLeft>380){
+                               	$j(".greet-part06-bg").css({"left":"572px","top": "58px"});
+                               }
+                                if(originLeft<-380&&originLeft>=-572){
+                                	$j(".greet-part06-bg").css({"left":"-380px","top": "58px"});
+                                }		
+                                if(originLeft<-190&&originLeft>=-380){
+                                	$j(".greet-part06-bg").css({"left":"-190px","top": "58px"});
+                                }
+                                if(originLeft<0&&originLeft>=-190){
+                               	$j(".greet-part06-bg").css({"left":"0px","top": "58px"});
+                                }                                                       	
+			}
+			//when the mouse move to the left
+			if(offsetX<0){
+                               if(originLeft==0){
+                               	$j(".greet-part06-bg").css({"left":"-190px","top": "58px"});
+                               }
+                               if(originLeft<0&&originLeft>=-190){
+                               	$j(".greet-part06-bg").css({"left":"-380px","top": "58px"});
+                               }
+                               if(originLeft<-190&&originLeft>=-380){
+                               	$j(".greet-part06-bg").css({"left":"-572px","top": "58px"});
+                               }
+                               if(originLeft<-380&&originLeft>=-572){
+                               	$j(".greet-part06-bg").css({"left":"-572px","top": "58px"});
+                               }
+                               if(originLeft<=572&&originLeft>380){
+                                $j(".greet-part06-bg").css({"left":"380px","top": "58px"});
+                                }
+                              if(originLeft<=380&&originLeft>190){
+                                $j(".greet-part06-bg").css({"left":"190px","top": "58px"});
+                                }
+                               if(originLeft<=190&&originLeft>0){
+                               	$j(".greet-part06-bg").css({"left":"0px","top": "58px"});
+                                }
+			}			
+		});
+                    $j(document).bind("mouseup",function(e){
+			$j(".greet-part06-phone").css("cursor","default");
+			$j(".greet-part06-phone").unbind("mouseup");
+			$j(this).unbind("mousemove");
+		})
+
+});
+
 </script>
 </body>
 </html>
