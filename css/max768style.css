@@ -296,8 +296,35 @@ background-color:#14b8e2;text-align: center;font-size: 1.1rem;color:#fff;border-
 .beam-part06 .inside-page-con{position: absolute;left:0px;top:26px;}
 .beam-part06-inside-page-con{width:82%;text-align: center;margin: 0 auto;}
 .beam-part06 .maintitle,.beam-part06 .subtitle{text-align: center;}
-
 /*the beam page  on the screen<768     end until     2016.10.12        written by jennifer*/
+.torchpro-part01{position: relative;}
+.torchpro-part01 .inside-page-con{position: absolute;top:24px;left:0px;padding-top: 2rem;text-align: center;}
+.torchpro-part01 .banner-point{margin-top: 21rem;}
+.torchpro-part02{position: relative;}
+.torchpro-part02 .inside-page-con{position: absolute;top:48px;left:0px;}
+.torchpro-part02 .maintitle,.torchpro-part02 .subtitle{text-align: left;}
+.torchpro-part03{position: relative;background: #f4f4f4;}
+.torchpro-part02-phone-pic{padding-top: 23rem;}
+.torchpro-part03-phone-pic{padding-top: 15rem;}
+.torchpro-part03 .inside-page-con{position: absolute;top:48px;left:0px;}
+.torchpro-part03 .maintitle,.torchpro-part03 .subtitle{text-align: left;}
+.torchpro-part04{position: relative;}
+.torchpro-part04 .inside-page-con{position: absolute;top:48px;left:0px;}
+.torchpro-part04 .maintitle,.torchpro-part04 .subtitle{text-align: center;}
+.torchpro-part04-phone-pic{padding-top: 14rem;}
+.torchpro-part05-item a{width: 30px;height: 30px;line-height: 30px;}
+.torchpro-part05-color-box{position:relative;}
+.torchpro-part06 .inside-page-con{position: absolute;top:48px;left:0px;}
+.torchpro-part06 .maintitle,.torchpro-part06 .subtitle{color:#fff;text-align: left;}
+.torchpro-part07 .inside-page-con{position: absolute;top:48px;left:0px;}
+.torchpro-part07{position: relative;}
+.torchpro-part07 .maintitle,.torchpro-part07 .subtitle{text-align: left;}
+/*.torchpro-part05-color-box-phone .swiper-wrapper{width:600%;}
+.torchpro-part05-color-box-phone .swiper-wrapper .swiper-slide{width:16.666%;float: left;}*/
+.torchpro-part06{position: relative;}
+.torchpro-part08{position: relative;}
+.torchpro-part08 .easy-Installation{width:85%;}
+.product-torchpro{margin-top: -5px;}
 }
 @media screen and (max-width: 500px){
 ul.press-con-item li.press-list{height: 37px;}
