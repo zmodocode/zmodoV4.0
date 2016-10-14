@@ -15,7 +15,7 @@ select{font-size:inherit;vertical-align:middle;outline: none;}
 .clear{clear:both;}
 .clearfix:before,.clearfix:after{content:"";display:table;}
 .clearfix:after{clear:both;}
-.clearfix{*zoom:1;/*IE/7/6*/}
+.clearfix{*zoom:1;}
 .none{display:none;}
 .padding-left-right-0{padding: 0px;}
 .opacity100{opacity: 1;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=$ieopacity)';filter:alpha(opacity=100);}
@@ -49,11 +49,11 @@ select{font-size:inherit;vertical-align:middle;outline: none;}
 }
 html{font-family:"Roboto Light","Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;height:100%;}
 /*the common "class" in the website  begin    by jennifer 2016.09.28 */
-.nav-con{font-size: 0.75rem;}
+.nav-con{font-size: 0.75rem;font-family:"Roboto Regular"!important;}
 .footer-con{font-size: 0.7rem;color:#666666;}
 .banner-main-tit{font-family:"Roboto Thin"!important;font-size: 2.0rem;line-height: 2.2rem;margin-bottom: 1rem;}
 .banner-sub-tit{font-size: 2.0rem;line-height: 2.2rem;font-family:"Roboto Medium"!important;}
-.footer-con a{color:#666666;}
+.footer-con a{color:#666666;font-family:"Roboto Regular"!important;}
 .footer-con a:hover{color:#333333;}
 a{color:#000;text-decoration:none;}
 a:hover,a:visited,a:active{text-decoration:none;}
@@ -108,7 +108,7 @@ font-family:"Roboto Medium"!important;text-align: center;line-height: 46px;displ
 @media screen and (max-width:768px) {
 html{font-size: 16px; }
 .nav-con{font-size: 1.2rem;}
-.footer-con{color:#333333;font-size: 0.86rem;}
+.footer-con{color:#333333;font-size: 1rem;}
 .footer-con a{color:#333333;width:100%;display: inline-block;}
 .footer-con a:hover{color:#333333;}
 .hidden-large{display: none;}
@@ -129,7 +129,7 @@ font-family:"Roboto Medium"!important;text-align: center;line-height:3rem;displa
 @media screen and (max-width:375px) {
 html{font-size: 14px; }
 .nav-con{font-size: 1.2rem;}
-.footer-con{color:#333333;font-size: 0.86rem;}
+.footer-con{color:#333333;font-size: 1rem;}
 .footer-con a{color:#333333;}
 .footer-con a:hover{color:#333333;}
 }
@@ -137,7 +137,7 @@ html{font-size: 14px; }
 @media screen and (max-width:320px) {
 html{font-size: 12px; }
 .nav-con{font-size: 1.2rem;}
-.footer-con{color:#333333;font-size: 0.86rem;}
+.footer-con{color:#333333;font-size: 1rem;}
 .footer-con a{color:#333333;}
 .footer-con a:hover{color:#333333;}
 .common-btn{width:9rem;}

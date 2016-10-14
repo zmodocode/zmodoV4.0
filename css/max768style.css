@@ -107,14 +107,14 @@ transform:translateY(0px);}
 #zmodo-nav .nav-searchview-close-wrapper{opacity: 0;}
 .nav-searchform-wrapper{border-bottom: 1px solid #fff;}
 .nav-con .nav-item{height: 45px;}
-#zmodo-nav .nav-link-product-item li a{display: inline-block;width:100%;padding-left: 45px;background-size: 30px  30px;background-repeat: no-repeat;
+#zmodo-nav .nav-link-product-item li a{display: inline-block;width:100%;/*padding-left: 45px;*/background-size: 30px  30px;background-repeat: no-repeat;
 background-position: 0 center;}
 #zmodo-nav .nav-link-product-item li.nav-link-product-item05{border-bottom: 1px solid #4dcef0;}
-#zmodo-nav .nav-link-product-item li.nav-link-product-item01 a{background-image:url("../images/navpivot.png");}
+/*#zmodo-nav .nav-link-product-item li.nav-link-product-item01 a{background-image:url("../images/navpivot.png");}
 #zmodo-nav .nav-link-product-item li.nav-link-product-item02 a{background-image:url("../images/navgreet.png");}
 #zmodo-nav .nav-link-product-item li.nav-link-product-item03 a{background-image:url("../images/doorlight.png");}
 #zmodo-nav .nav-link-product-item li.nav-link-product-item04 a{background-image:url("../images/navreplay.png");}
-#zmodo-nav .nav-link-product-item li.nav-link-product-item05 a{background-image:url("../images/navbeam.png");}
+#zmodo-nav .nav-link-product-item li.nav-link-product-item05 a{background-image:url("../images/navbeam.png");}*/
 .nav-link-arrow{top: 27px;right: 0px;position: absolute;display: inline-block;-webkit-transition:-webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1),
 -webkit-transform-origin 0.5s cubic-bezier(0.86, 0, 0.07, 1);-ms-transition:-ms-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1),
 -ms-transform-origin 0.5s cubic-bezier(0.86, 0, 0.07, 1);transition:transform 0.5s cubic-bezier(0.86, 0, 0.07, 1),transform-origin 0.5s cubic-bezier(0.86, 0, 0.07, 1);}
@@ -159,7 +159,7 @@ ul.press-con-item li.press-list{width:32.33%;height: auto;text-align: center;}
 .footer-con .footer-item-subscribe .foot-btn{top: 9px;}
 .home-main-table .row-list.hidden-small{display: block;}
 .home-replay-phone{width:100%;overflow: hidden;position: relative;}
-.home-replay-phone-item{width:200%;transform:translate3d(0,0,0);transition:all 0.5s;display: inline-block;}
+.home-replay-phone-item{width:200%;transform:translate3d(0,0,0);transition:all 0.5s;display:block;}
 .dots{position: absolute;bottom: 20px;width:100%;text-align: center;}
 .home-replay-phone-item li{float: left;width:50%;display: inline-block;text-align: center;}
 .home-replay-phone-item li a.slide-a{display:inline-block;width:100%;}
@@ -173,6 +173,7 @@ ul.press-con-item li.press-list{height: 56px;}
 ul.press-con-item li.press-list img{width:50%;}
 .press-con{padding: 2rem 0rem  2rem 0rem;}
 .home-imgx2{width:7rem;}
+.banner li img{display: block;}
 /*the pivot page  on the screen<768     begin      2016.10.08        written by jennifer*/
 .banner-point li{display: inherit;}
 .pivot-part01{width:100%;background:none;height: auto;}
@@ -325,6 +326,7 @@ background-color:#14b8e2;text-align: center;font-size: 1.1rem;color:#fff;border-
 .torchpro-part08{position: relative;}
 .torchpro-part08 .easy-Installation{width:85%;}
 .product-torchpro{margin-top: -5px;}
+.torchpro-part08 .inside-page-con{position: absolute;left:0px;top:-45px;}
 }
 @media screen and (max-width: 500px){
 ul.press-con-item li.press-list{height: 37px;}

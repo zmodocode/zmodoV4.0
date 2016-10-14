@@ -43,9 +43,10 @@ transition:transform 0.25s ease-out;}
 #zmodo-nav{cursor: pointer;}
 .nav-menuicon{cursor: pointer;}
 #zmodo-nav-placeholder{height: 48px;}
-.nav-products{width:100%;position: absolute;left:0px;top:48px;z-index: 10000;height: 0rem;opacity: 0;transition:all 0.5s;background: #fff;}
+.nav-products{width:100%;position: absolute;left:0px;top:48px;z-index: 10000;opacity:0;height: 0rem;opacity: 0;transition:all 0.5s;background: #fff;}
 .nav-products.nav-products-show{height: 9rem;opacity: 1;}
-.nav-products-con{width:1000px;margin: 0 auto;padding: 1rem 0rem;}
+.nav-products-con{width:1000px;margin: 0 auto;padding: 1rem 0rem;display: none}
+.nav-products.nav-products-show .nav-products-con{display:block;}
 .nav-products-con .nav-products-item{display: inline-block;width: 19.6%;text-align: center;}
 .nav-products-con .nav-products-item p{font-size: 0.8rem;margin-top: 1rem;cursor: pointer;}
 .nav-products-con .nav-products-item p:hover{color:#14b8e2;}
@@ -77,7 +78,7 @@ transition:transform 0.25s ease-out;}
 .footer-con .footer-item-subscribe .foot-btn{width: 20px;position: absolute;top: 6px;right: 10px;color:#999999;height: 20px;background: none;cursor: pointer;}
 .footer-con .footer-item-subscribe .foot-btn::before{-webkit-transform-origin:100% 0%;-ms-transform-origin:100% 0%;transform-origin:100% 0%;-webkit-transform:rotate(-40deg);-ms-transform:rotate(-40deg);transform: rotate(-40deg);position: absolute;top: 9px;right: 2px;}
 .footer-con .footer-item-subscribe .foot-btn::after{-webkit-transform-origin:100% 0%;-ms-transform-origin:100% 0%;transform-origin:100% 0%;-webkit-transform:rotate(40deg);-ms-transform:rotate(40deg);transform: rotate(40deg);position: absolute;top: 9px;right: 2px;}
-.footer-con .footer-share-item a{width:28px;height: 28px;line-height:28px;display: inline-block;background:url("../images/footer-share-icon.png") no-repeat;background-size: 195px  75px;}
+.footer-con .footer-share-item a{width:28px;height: 28px;line-height:28px;display: inline-block;background:url("../images/footer-share-icon.png") no-repeat;background-size: 195px  75px;color:#14b8e2;font-family:"Roboto Regular"!important;}
 .footer-con .footer-share-item07 {width:60px;height: 28px;}
 .footer-con .footer-share-item07 a{width:60px;background: none;}
 .footer-con .footer-share-item01 a{background-position: 0px -45px;}
@@ -96,7 +97,7 @@ transition:transform 0.25s ease-out;}
 
 /*the home page  on the screen>1023     begin      2016.09.30        written by jennifer*/
 .banner-box{width:100%;overflow: hidden;position: relative;}
-.banner{width:300%;transform:translate3d(0,0,0);transition:all 0.5s;display: inline-block;}
+.banner{width:300%;transform:translate3d(0,0,0);transition:all 0.5s;display:block;}
 .dots{position: absolute;bottom: 20px;width:100%;text-align: center;}
 .banner li{float: left;width:33.33333%;display: inline-block;text-align: center;}
 .banner li a.slide-a{display:inline-block;width:100%;}
@@ -147,6 +148,7 @@ ul.press-con-item li.press-list07{background-position: -853px 0px;}
 .home-main-table{width:100%;}
 .home-main-table .row-list{vertical-align: middle;}
 .home-main-table .row-list.hidden-small{display: none;}
+.home-replay-phone-item a,.home-replay-phone-item a img{display: block;}
 /*the home page  on the screen>1023     end      2016.09.30        written by jennifer*/
 /*the pivot page  on the screen>1023     begin      2016.10.08        written by jennifer*/
 .product-pivot.pivot-part01 .banner-maintitle{padding-top: 10rem;}
@@ -403,7 +405,7 @@ float: left;margin-left: 10px;margin-top: 3px;}
 border-radius: 30px;background: #14b8e2;font-size: 1.4rem;display: inline-block;margin-top: 6rem;}
 .torchpro-part09 .inside-page-con{text-align: center;}
 .torchpro-part09-con{width:290px;margin: 0 auto;text-align: center;}
-.torchpro-part08 .inside-page-con{position: absolute;left:0px;top:-45px;}
+
 @media screen and (min-width:769px){
 /*the code which can't   share  width the  screen that=<768px   begin*/
 #zmodo-nav  .nav-con .nav-item-menu{opacity: 1;-webkit-transition:opacity 0.25s ease-out;transition:opacity 0.25s ease-out;}
@@ -486,6 +488,8 @@ border-radius: 30px;background: #14b8e2;font-size: 1.4rem;display: inline-block;
 .torchpro-part07 .maintitle,.torchpro-part07 .subtitle{text-align: center;width:74%;margin: 0 auto;}
 .torchpro-part07 .maintitle{padding-top: 10rem;margin-bottom: 1.1rem;}
 .torchpro-part08-pic{margin-top: 3rem;}
+.torchpro-part06{margin-top: -5px;}
+.torchpro-part06 .maintitle{padding-top: 4rem;}
 }
 
 @media screen and (max-width:1500px){
