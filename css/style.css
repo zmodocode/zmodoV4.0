@@ -529,6 +529,19 @@ animation:enlarge  1s  infinite;transform:scale(1.0,1.0);-webkit-animation:enlar
 .contact-part03-con .location{margin:0px;margin-bottom:0.35rem;color:#7d7d7d;font-size:0.7rem;line-height:20px;height: 3rem;}
 .contact-part03-con .tel{margin:0.5rem 0rem 1.5rem 0rem;color:#7d7d7d;font-size: 0.6rem;}
 .product-list-amazon a.amazon:hover{opacity: 0.5;}
+.about-part01{width:100%;height: 26.5rem;background: url(../images/11.jpg) center center;}
+.about-part01-maintitle{font-size: 3rem;color:#13b9e3;width:100%;text-align: center;padding-top: 9rem;font-family:"Roboto Thin"!important;}
+.about-part02{margin-bottom: 4rem;}
+.about-part02 .inside-page-con{padding: 2rem 0rem;color:#333333;font-size: 0.9rem;}
+.about-part03{height: 2130px;background: #fafafa;}
+.about-part03 img{margin-top: -60px;}
+.about-part04-maintit{font-size: 1.5rem;color:#333;width:100%;text-align: center;margin: 2rem 0rem 1rem 0rem;}
+.about-part04-subtit{font-size: 1.1rem;color:#666;width:100%;text-align: center;}
+.about-part04{padding-bottom: 2rem;}
+.supports-part01{width:100%;height:19rem;background: url(../images/12.jpg) center center;}
+.supports-part02-item{width:25%;float: left;text-align: center;}
+.supports-part02-item a{display: inline-block;}
+.supports-part02-item-box{overflow: hidden;}
 @media screen and (min-width:769px){
 /*the code which can't   share  width the  screen that=<768px   begin*/
 #zmodo-nav  .nav-con .nav-item-menu{opacity: 1;-webkit-transition:opacity 0.25s ease-out;transition:opacity 0.25s ease-out;}
@@ -754,7 +767,9 @@ ul.press-con-item li.press-list07{background-position: -861px 0px;}
 .product-list-right{float: none;width:768px;margin: 0 auto;}
 .product-list-left{height: 500px;}
 .product-list-left img{width:100%;}
-
+.about-part02 .inside-page-con{padding: 2rem 0rem;}
+.about-part03{height:auto;}
+.about-part03 img{margin-top: -50px;}
 }
 
 @media screen and (max-width:960px){
