@@ -484,7 +484,7 @@ animation:enlarge  1s  infinite;transform:scale(1.0,1.0);-webkit-animation:enlar
 .amazon img{vertical-align: middle;}
 .product-list-amazon{margin-top: 0.5rem;}
 .add-on-sensors-list{margin-left: -10px;}
-.add-on-sensors-item{width:155px;background: #f3f3f3;float: left;border: 1px solid #fff;padding: 10px 15px;margin-left: 10px;}
+.add-on-sensors-item{width:155px;background: #f3f3f3;float: left;border: 1px solid #fff;padding: 10px 15px;margin-left: 10px;cursor: pointer;}
 .add-on-sensors-item.style-active{border: 1px solid #14b8e2;}
 .add-on-sensors-tit{font-size: 0.8rem;color:#888;margin:1.5rem 0rem 1rem 0rem;}
 .add-on-sensors-tit span{color:#3f3f45;}
@@ -512,6 +512,23 @@ animation:enlarge  1s  infinite;transform:scale(1.0,1.0);-webkit-animation:enlar
 .interest-list li{width:24%;float: left;margin-left: 1%;}
 .interest-list  p.interest-list-txt{height: 64px;color:#888;font-size: 0.8rem;overflow: hidden;}
 .interest-list  p.interest-list-price{color:#14b8e2;font-size: 1rem;bottom: 0px;}
+.contact-part01{width:100%;height: 25rem;background: url(../images/03.jpg) center center;}
+.inside-page-con .maintitle,.inside-page-con .subtitle{text-align: left;}
+.contact-part01 .maintitle{padding-top: 8rem;}
+.contact-part02{background: #fafafa;}
+.contact-part02 .maintitle{margin-bottom: 2rem;padding-top: 2rem;}
+.contact-part02-con{width:100%;}
+.contact-part02-con li{width:33%;text-align: center;float: left;}
+.contact-part02-pic:hover{opacity: 0.8;}
+.contact-part02{padding-bottom: 3rem;}
+.contact-part03 .maintitle{margin-bottom: 2rem;padding-top: 2rem;}
+.contact-part03-con{margin-left: -10px;}
+.contact-part03-con li{width:24%;float: left;margin-left: 1%;}
+.contact-part03-con li img{width:100%;}
+.contact-part03-con .name{margin:15px 0px 0px;line-height:30px;font-size:18px;color:#333;}
+.contact-part03-con .location{margin:0px;margin-bottom:0.35rem;color:#7d7d7d;font-size:0.7rem;line-height:20px;height: 3rem;}
+.contact-part03-con .tel{margin:0.5rem 0rem 1.5rem 0rem;color:#7d7d7d;font-size: 0.6rem;}
+.product-list-amazon a.amazon:hover{opacity: 0.5;}
 @media screen and (min-width:769px){
 /*the code which can't   share  width the  screen that=<768px   begin*/
 #zmodo-nav  .nav-con .nav-item-menu{opacity: 1;-webkit-transition:opacity 0.25s ease-out;transition:opacity 0.25s ease-out;}
