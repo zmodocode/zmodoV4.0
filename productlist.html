@@ -250,10 +250,10 @@
 				<div class="add-on-sensors">
 					<p class="add-on-sensors-tit">Style:<span>Add On Sensors - 2 Pack</span></p>
 					<ul class="add-on-sensors-list clearfix">
-						<li class="add-on-sensors-item style-active"><a href="">
+						<li class="add-on-sensors-item  add-on-sensors-item01  style-active"><a href="javascript:">
 							<p>Add On Sensors - 2 Pack <br>$39.99</p>
 						</a></li>
-						<li class="add-on-sensors-item"><a href="">
+						<li class="add-on-sensors-item  add-on-sensors-item02"><a href="javascript:">
 							<p>Add On Sensors - 4 Pack <br>$59.99</p>
 						</a></li>
 					</ul>
@@ -453,9 +453,11 @@
             links = this.getElementsByTagName('a');
         blueimp.Gallery(links, options);
     });
-    $j(".add-on-sensors-list").find(".add-on-sensors-item").mouseover(function(){
-     $j(this).addClass("style-active").siblings().removeClass("style-active");
-    });
+    $j(".add-on-sensors-item02").mouseover(function(){
+     $j(this).addClass("style-active");
+    }).mouseout(function(){
+     $j(this).removeClass("style-active");	
+    })
     $j(".add-on-sensors-list").find(".add-on-sensors-item").click(function(){
      $j(this).addClass("style-active").siblings().removeClass("style-active");
     });
