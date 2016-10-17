@@ -388,6 +388,7 @@ background-color:#14b8e2;text-align: center;font-size: 1.1rem;color:#fff;border-
 .interest-list li img{width:50%;height: auto;float: left;}
 .interest-list  p.interest-list-txt,.interest-list  p.interest-list-price{position: inherit;width:40%;float: left;margin-left: 5%;}
 .interest-list  p.interest-list-txt{height: auto;font-size: 1rem;margin-top: 50px;}
+.add-on-sensors-item{width:38%;}
 }
 @media screen and (max-width: 500px){
 ul.press-con-item li.press-list{height: 37px;}
@@ -407,4 +408,5 @@ ul.press-con-item li.press-list{height: 30px;}
 .pivot-part10 .inside-page-con{padding: 0px;}
 .pivot-part10-btn li a p{line-height: 10px;}
 .greet-part08-item .txt{width:65%;}
+.add-on-sensors-item{width:36%;}
 }

@@ -503,8 +503,8 @@ animation:enlarge  1s  infinite;transform:scale(1.0,1.0);-webkit-animation:enlar
 .spec-scroll{width:100%;overflow: hidden;}
 .blueimp-gallery>.prev, .blueimp-gallery>.next{font-size: 34px;}
 .product-img-list{width:292px;overflow: hidden;margin-left: 5px;}
-.product-video{float:left;width:53px;height:53px;position: relative;}
-.product-img-list .img-list .videobtn,.product-img-list .img-list .videobtn-hover{position: absolute;width:30px;left:10px;height:30px;top:5px;}
+.product-video{float:left;position: relative;}
+.product-img-list .img-list .videobtn,.product-img-list .img-list .videobtn-hover{position: absolute;width:30px;left:5px;height:30px;top:5px;}
 #spec-list  li  .img-responsive.active{outline: 1px  solid #dbdbdb;}
 .product-video{text-align: center;}
 .product-interest{padding-top: 4rem;}
