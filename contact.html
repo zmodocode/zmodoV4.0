@@ -166,18 +166,22 @@
 		<div class="inside-page-con">
 			<p class="maintitle">Live chat & email</p>
 			<ul class="contact-part02-con clearfix">
-
-				<li>
+				<li class="contact-part02-con-item contact-part02-con-item01">
+					<a href="javascript:" onclick="livechat_popup()">
 					<img src="images/04.png" alt="" class="contact-part02-pic">
 					<p>Live chat with us</p>
+					</a>
 				</li>
-				<li>
+				<li class="contact-part02-con-item contact-part02-con-item02">
 					<img src="images/05.png" alt="" class="contact-part02-pic">
 					<p>Write us an email</p>
+					<p>For sales:<a href="mailto:sales@zmodo.com">sales@zmodo.com</a></p>
+					<p>For general issues:<a href="mailto:support@zmodo.com">support@zmodo.com</a></p>
 				</li>
-				<li>
+				<li class="contact-part02-con-item contact-part02-con-item03">
 					<img src="images/06.png" alt="" class="contact-part02-pic">
 					<p>Call our support line</p>
+					<p>217-903-5037</p>
 				</li>
 			</ul>
 		</div>
@@ -292,79 +296,15 @@
 	<script  src="js/plugin/swiper.min.js"></script>
 	<script  src="js/common.js"></script>
 	<script  src="js/plugin/jquery.artDialog.js"></script>
-	<script>	
-     var mySwiperreplaypart02 = new Swiper('.replay-part02 .swiper-container', {
-             pagination: '.replay-part02 .swiper-pagination',
-             grabCursor: true,
-             paginationClickable: true,
-             paginationType: 'bullets'
-         });
-      var mySwiperreplaypart06 = new Swiper('.replay-part06 .swiper-container', {
-             pagination: '.replay-part06 .swiper-pagination',
-             grabCursor: true,
-             paginationClickable: true,
-             paginationType: 'bullets'
-         });
-     var mySwiperreplaypart09 = new Swiper('.replay-part09 .swiper-container', {
-             pagination: '.replay-part09 .swiper-pagination',
-             grabCursor: true,
-             paginationClickable: true,
-             paginationType: 'bullets'
-         });
-     $j(".replay-part06-list").find("li").mouseover(function(){
-      var replayIndex=$j(this).index();
-      $j(this).addClass("replay-part06-active").siblings().removeClass("replay-part06-active");
-      $j(".replay-part06-iphone").find("img").eq(replayIndex).show().siblings().hide();
-     });
-    
+	<script>	   
 // the animation of the first screen on the pc   begin   from   2016.10.09    written by jennifer	
-         $j(".watch-video").mouseover(function () {
-             $j(".watch-video-icon").addClass("wvi-active");
-         });
-         $j(".watch-video").mouseleave(function () {
-             $j(".watch-video-icon").removeClass("wvi-active");
-         });
-         function playUrl(url) {
-             var iframe = '<iframe height="480" width="853" src="' + url + '" frameborder=0 allowfullscreen="true"  scrolling=no allowtransparency></iframe>'
-             if (url != "") {
-                 art.dialog({
-                     id: 'playVido',
-                     width: 853,
-                     height: 480,
-                     padding: 0,
-                     title: ' ',
-                     content: iframe,
-                     lock: true
-                 });
-             }
-         };
-         $j(".watch-video").click(function () {
-             var url = "https://www.youtube.com/embed/O6uSkpCNLjk?rel=0&showinfo=0&autoplay=1&loop=1&playlist=O6uSkpCNLjk";
-             playUrl(url);
-         });
-         $j(".replay-part03-watch").click(function () {
-             var url = "https://www.youtube.com/embed/V6Ei4aYpl04?rel=0&showinfo=0&autoplay=1&loop=1&playlist=V6Ei4aYpl04";
-             playUrl(url);
-         });
-      var screenWidth = $j(document).width();
-     if (screenWidth - 768 > 0) {
-      $j(".replay-part12-con").find("a").click(function(){
-      	var replay12Index=$j(this).index();
-      	$j(this).find(".arrow-down-icon").removeClass("arrow-down");
-      	$j(this).siblings().find(".arrow-down-icon").addClass("arrow-down");
-      	console.debug($j(".replay-part12-con .inside-page-con").find("img").eq(replay12Index))
-      	$j(".replay-part12-inside-page-con").find("img").eq(replay12Index).show().siblings().hide();
-      })
-     }else{
-       $j(".explore-btn").click(function () {
-         $j(".replay-part12-item02").toggle();
-         if ($j(".arrow-down-icon").hasClass("arrow-down")) {
-             $j(".arrow-down-icon").removeClass("arrow-down");
-         } else {
-             $j(".arrow-down-icon").addClass("arrow-down");
-         }
-     })   
-     }
+function livechat_popup(){
+ $j('reamaze-widget').click();
+}
+         
+        
+         
+    
 
 </script>
 </body>

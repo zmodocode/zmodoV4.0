@@ -184,24 +184,24 @@
 				<div id="spec-n1" class="spec-preview  bigPicSize clearfix hidden-large hidden-769-1023">
 					<ul class="clearfix">
 						<li class="big-first">
-							<a>
-								<img class="pc-img" src="images/store/05.jpg" width="340" jqimg=""></a>
+							<a href="images/store/05.jpg">
+								<img class="pc-img" src="images/store/05.jpg" width="340" jqimg="images/store/05.jpg"></a>
 						</li>
 						<li>
-							<a>
-								<img class="pc-img" src="images/store/02.jpg" width="340" jqimg=""></a>
+							<a href="images/store/02.jpg">
+								<img class="pc-img" src="images/store/02.jpg" width="340" jqimg="images/store/02.jpg"></a>
 						</li>
 						<li>
-							<a>
-								<img class="pc-img" src="images/store/04.jpg" width="340" jqimg=""></a>
+							<a href="images/store/04.jpg">
+								<img class="pc-img" src="images/store/04.jpg" width="340" jqimg="images/store/03.jpg"></a>
 						</li>
 						<li>
-							<a>
-								<img class="pc-img" src="images/store/05.jpg" width="340" jqimg=""></a>
+							<a href="images/store/05.jpg">
+								<img class="pc-img" src="images/store/05.jpg" width="340" jqimg="images/store/04.jpg"></a>
 						</li>
 						<li>
-							<a>
-								<img class="pc-img" src="images/store/06.jpg" width="340" jqimg=""></a>
+							<a href="images/store/06.jpg">
+								<img class="pc-img" src="images/store/06.jpg" width="340" jqimg="images/store/05.jpg"></a>
 						</li>
 					</ul>
 					<div class="enlarge-more">+</div>
@@ -240,7 +240,7 @@
 					Zmodo Pivot 1080p Wireless Security Camera 
                                 and All-in-One Smart Home Hub
 				</p>
-				<ul>
+				<ul class="product-detail">
 					<li class="product-list-subtit">Monitor in full  you can record days of video</li>
 					<li class="product-list-subtit">
 						HD with Pivot's wide angle 1080p camera. With 16GB of built-in storage,
@@ -263,8 +263,8 @@
 						<h6 class="old-price list_price">
 							<p class="price" id="old-price">$199.50</p>
 						</h6>
-						<h6 class="special-price our_price">
-							<p class="price" id="product-price">
+						<h6 class="special-price our_price clearfix">
+							<p class="price" id="product-price clearfix">
 								<span class="symbol">$</span>
 								<span class="money">99.99</span>
 							</p>
@@ -406,7 +406,6 @@
 	<script  src="js/plugin/blueimp-gallery.js"></script>
 	<script  src="js/plugin/blueimp-gallery-fullscreen.js"></script>
 	<script  src="js/plugin/blueimp-gallery-indicator.js"></script>
-	<script  src="js/plugin/blueimp-helper.js"></script>
 	<script>
 	$j(".money").html('<span>'+$j(".money").html().split(".")[0]+'.</span><span class="small">'+$j(".money").html().split('.')[1]+'</span>');
 	$j(".jqzoom").jqueryzoom({
@@ -453,6 +452,7 @@
             links = this.getElementsByTagName('a');
         blueimp.Gallery(links, options);
     });
+  $j(".indicator").find("li").css({background:"#14b8e2"});
     $j(".add-on-sensors-item02").mouseover(function(){
      $j(this).addClass("style-active");
     }).mouseout(function(){

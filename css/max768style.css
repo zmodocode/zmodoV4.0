@@ -395,6 +395,16 @@ background-color:#14b8e2;text-align: center;font-size: 1.1rem;color:#fff;border-
 .about-part03{height:auto;}
 .about-part03 img{margin-top:0px;}
 .supports-part02-item{width:100%;float:none;}
+.supports-part02-item{margin-bottom: 4rem;}
+.supports-part04-item{width:100%;float: none;text-align: center;margin-bottom: 2rem;}
+.supports-part05-item{width:100%;float: none;text-align: center;margin-bottom: 2rem;}
+.supports-part05-item .maintitle,.supports-part05-item .subtitle{text-align: center;}
+.legal-tab-box a.legal-tab1{width:12.33%;}
+.legal-tab-box a.legal-tab2{width: 27.45%;}
+.legal-tab-box a.legal-tab3{width:14%;}
+.legal-tab-box a.legal-tab4{width: 14%;}
+.legal-tab-box{padding-top: 209px;}
+.legal-part01 .inside-page-con{width:100%;padding: 0% 0%;}
 }
 @media screen and (max-width: 500px){
 ul.press-con-item li.press-list{height: 37px;}
@@ -415,4 +425,6 @@ ul.press-con-item li.press-list{height: 30px;}
 .pivot-part10-btn li a p{line-height: 10px;}
 .greet-part08-item .txt{width:65%;}
 .add-on-sensors-item{width:36%;}
+.legal-tab-box a.legal-tab2{width:20.45%;}
+.legal-tab-box a.legal-tab3{width:15%;}
 }
