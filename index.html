@@ -173,12 +173,15 @@
            		<p class="row-list-subtit hidden-small"> Pivot rotates automatically to  keep tabs <br> on the  spaces we call home.</p>
            		</div>
            	</td>
-           	<td class="row-list"><img src="images/home/01.jpg" alt=""  class="row-img"></td>
+           	<td class="row-list">
+           		<img src="images/home/01.jpg" alt=""  class="row-img hidden-large">
+           		<img src="images/home/16.jpg" alt=""  class="row-img hidden-small">
+           	</td>
            </tr>
            </table>
            <table  class="home-main-table">
             <tr class="row row-float-right clearfix">
-            	<td class="row-list hidden-small row-list-padding">
+            	<td class="row-list  row-list-padding hidden-small">
            		<div class="row-con">
            		<div class="row-list-icon">
            			<img src="images/home/08x2.png" alt="" class="hidden-small  home-imgx2"></div>
@@ -189,7 +192,10 @@
                         know. Add Pivot or Replay for <br> the perfect whole house solution!</p>
                     </div>
            	</td>      
-            	<td class="row-list"><img src="images/home/02.jpg" alt=""  class="row-img"></td>     
+            	<td class="row-list">
+            		<img src="images/home/02.jpg" alt=""  class="row-img hidden-large">
+            		<img src="images/home/17.jpg" alt=""  class="row-img hidden-small">
+            	</td>     
             	<td class="row-list  hidden-large">
            		<div class="row-con">
            		<div class="row-list-icon"><img src="images/home/08.png" alt="" class="hidden-large"></div>
@@ -226,8 +232,11 @@
            </tr>
            </table>
            <table class="home-main-table">
-             <tr class="row row-float-right clearfix  ">          	
-           	<td class="row-list"><img src="images/home/04.jpg" alt=""  class="row-img"></td>
+             <tr class="row row-float-right clearfix  row04">          	
+           	<td class="row-list">
+           		<img src="images/home/04.jpg" alt=""  class="row-img hidden-large">
+           		<img src="images/home/18.jpg" alt=""  class="row-img hidden-small">
+           	</td>
            	<td class="row-list row-list-padding">
            		<div class="row-con">  
           		<p class="row-list-tit">Give your home a boost.</p>
@@ -323,6 +332,16 @@
 					<p>2016 Zmodo.</p>
 				</li>
 			</ul>
+		</div>		
+		<div class="common-fixed-box clearfix">
+		<a class="common-back-top">
+			<img src="images/top-arrow.png" alt="" class="top-arrow">
+			<br>
+			TOP
+		</a>
+		<p class="common-fixed-name"></p>
+		<a class="common-buy-now" href="javascript:">Buy Now</a>
+		<a href="javascript:" class="common-store-car"><img src="images/car-hover.png" alt="" class="common-car-pic"></a>
 		</div>
 	</footer>
 <script  src="js/jquery.min.js"></script>
@@ -351,6 +370,12 @@ var loop=new Bannerloop({
                 paginationType:'bullets'
             });
 }
-  
+$j(document).scroll(function (){
+         if ($j(document).scrollTop()>48){
+             $j(".common-fixed-box").stop().fadeOut(500);
+         }else{
+             $j(".common-fixed-box").stop().fadeOut(500);
+         }        
+     })  
 </script></body>
 </html>

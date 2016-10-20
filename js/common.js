@@ -93,15 +93,27 @@ var screenWidth=$j(document).width();
            $j(".footer-con .footer-share-item06 a").css("background-position","-167px -45px")
     });
      // common toggle animation  on the pc begin from    2016.10.12        written by jennifer 
-    $j(".explore-btn").click(function () {
+    $j(".explore-btn").click(function(){
          $j(".explore-con").toggle();
-         if ($j(".arrow-down-icon").hasClass("arrow-down")) {
+         if ($j(".arrow-down-icon").hasClass("arrow-down")){
              $j(".arrow-down-icon").removeClass("arrow-down");
-         } else {
+         }else{
              $j(".arrow-down-icon").addClass("arrow-down");
          }
-     })   
+     });   
      // common toggle animation end  until    2016.10.12        written by jennifer 
+     // back to top animation  on the pc begin from    2016.10.19        written by jennifer    
+     $j(document).scroll(function (){
+         if ($j(document).scrollTop()>600){
+             $j(".common-back-top").stop().fadeIn(500);
+         }else{
+             $j(".common-back-top").stop().fadeOut(500);
+         }
+         $j(".common-back-top").click(function(){
+           $j('html, body').stop().animate({scrollTop: 0}, 500, 'swing');
+         });
+     })
+      // back to top animation end  until    2016.10.19        written by jennifer 
            }
     if(screenWidth-768<=0){
     $j(".nav-menuicon-label").click(function(){
@@ -132,15 +144,24 @@ var screenWidth=$j(document).width();
            });
 
  // common toggle animation  on the phone begin from    2016.10.12        written by jennifer 
-    $j(".explore-btn").click(function () {
+    $j(".explore-btn").click(function(){
          $j(".explore-con-phone").toggle();
-         if ($j(".arrow-down-icon").hasClass("arrow-down")) {
+         if($j(".arrow-down-icon").hasClass("arrow-down")){
              $j(".arrow-down-icon").removeClass("arrow-down");
-         } else {
+         }else{
              $j(".arrow-down-icon").addClass("arrow-down");
          }
      })   
     // common toggle animation end until    2016.10.12        written by jennifer 
+  // back to top animation  on the phone begin from    2016.10.19        written by jennifer    
+     $j(document).scroll(function (){
+         if ($j(document).scrollTop()>48){
+             $j(".common-fixed-box").stop().fadeIn(500);
+         }else{
+             $j(".common-fixed-box").stop().fadeOut(500);
+         }        
+     })
+      // back to top animation on the phone end  until    2016.10.19        written by jennifer    
 }
            $j(".nav-searchform-submit").click(function(e){
                      e.preventDefault();

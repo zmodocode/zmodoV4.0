@@ -163,10 +163,15 @@
 			<p class="store-subtit">
 				A smart turn for
 				<br>connected cameras.</p>
-			<p class="store-price">
-				<span class="store-price-logo">$</span>99.99 
-				<span>$</span>199.50
-			</p>
+			<div class="store-price-all clearfix">	
+			<p class="store-price clearfix">
+				<span class="store-price-logo">$</span>
+				<span class="money">
+					99.99
+				</span>			
+			</p>			
+			<p class="old-price"><strike class="remove">$199.50</strike></p>
+			</div>
 			<ul class="banner-point">
 				<li>
 					<a href="" class="buy-now">Buy Now</a>
@@ -181,7 +186,14 @@
 			<div class="product-store-con">
 				<p class="store-maintit">Greet</p>
 				<p class="store-subtit">Welcome to the<br>connected home.</p>
-				<p class="store-price"><span class="store-price-logo">$</span>150.00</p>
+				<div class="store-price-all clearfix">
+				<p class="store-price clearfix">
+				<span class="store-price-logo">$</span>
+				<span class="money">
+					150.00
+				</span>			
+			           </p>	
+			           </div>		
 				<ul class="banner-point">
 					<li>
 						<a href="" class="buy-now">Buy Now</a>
@@ -196,12 +208,18 @@
 				<p class="store-maintit">Sensors</p>
 				<p class="store-subtit">Cover more doors<br>and windows.</p>				
 				<ul class="store-part-item-list01 store-part-item-list clearfix">
-					<li>2 Pack</li>
-					<li>4 Pack</li>
+					<li class="store-part-list-item01">2 Pack</li>
+					<li class="store-part-list-item02">4 Pack</li>
 				</ul>
 				<ul class="store-part-item-list02 store-part-item-list clearfix">
-					<li class="store-price"><p><span class="store-price-logo">$</span>35.99</p></li>
-					<li class="store-price"><p><span class="store-price-logo">$</span>59.99</p></li>
+					<li class="store-price clearfix  store-part-list-item01">						
+						<span class="store-price-logo">$</span>
+				                      <span class="money">35.99</span>	
+					</li>
+					<li class="store-price  clearfix store-part-list-item02">
+						<span class="store-price-logo">$</span>
+				                      <span class="money">59.99</span>	
+					</li>
 				</ul>
 				<ul class="banner-point">
 					<li>
@@ -218,7 +236,14 @@
 			<div class="product-store-con">
 				<p class="store-maintit">Replay</p>
 				<p class="store-subtit">Make sure your whole <br>home is covered.</p>
-				<p class="store-price"><span class="store-price-logo">$</span>399.00</p>
+				<div class="store-price-all clearfix">
+				<p class="store-price clearfix">
+				<span class="store-price-logo">$</span>
+				<span class="money">
+					399.00
+				</span>			
+			           </p>	
+			       </div>
 				<ul class="banner-point">
 					<li>
 						<a href="" class="buy-now">Buy Now</a>
@@ -233,7 +258,14 @@
 				<p class="store-maintit">Mini WiFi Camera</p>
 				<p class="store-subtit">A compact yet sophisticated home
 monitoring solution.</p>
-				<p class="store-price"><span class="store-price-logo">$</span>39.99</p>
+                                          <div class="store-price-all clearfix">
+				<p class="store-price clearfix">
+				<span class="store-price-logo">$</span>
+				<span class="money">
+					399.00
+				</span>			
+			           </p>	
+			       </div>
 				<ul class="banner-point">
 					<li>
 						<a href="" class="buy-now">Buy Now</a>
@@ -249,7 +281,14 @@ monitoring solution.</p>
 			<div class="product-store-con">
 				<p class="store-maintit">Pan & Tilt Camera</p>
 				<p class="store-subtit">See more of what you love.</p>
-				<p class="store-price"><span class="store-price-logo">$</span>65.00</p>
+				<div class="store-price-all clearfix">
+				<p class="store-price clearfix">
+				<span class="store-price-logo">$</span>
+				<span class="money">
+					65.00
+				</span>			
+			           </p>
+			           </div>	
 				<ul class="banner-point">
 					<li>
 						<a href="" class="buy-now">Buy Now</a>
@@ -263,7 +302,14 @@ monitoring solution.</p>
 			<div class="product-store-con">
 				<p class="store-maintit">Beam</p>
 				<p class="store-subtit">Connect with ease.</p>
-				<p class="store-price"><span class="store-price-logo">$</span>49.95</p>
+				<div class="store-price-all clearfix">
+				<p class="store-price clearfix">
+				<span class="store-price-logo">$</span>
+				<span class="money">
+				49.95
+				</span>			
+			           </p>	
+			       </div>
 				<ul class="banner-point">
 					<li>
 						<a href="" class="buy-now">Buy Now</a>
@@ -343,13 +389,25 @@ monitoring solution.</p>
 					<p>2016 Zmodo.</p>
 				</li>
 			</ul>
+		</div>		
+		<div class="common-fixed-box clearfix">
+		<a class="common-back-top">
+			<img src="images/top-arrow.png" alt="" class="top-arrow">
+			<br>
+			TOP
+		</a>
+		<p class="common-fixed-name"></p>
+		<a class="common-buy-now" href="javascript:">Buy Now</a>
+		<a href="javascript:" class="common-store-car"><img src="images/car-hover.png" alt="" class="common-car-pic"></a>
 		</div>
 	</footer>
 	<script  src="js/jquery.min.js"></script>
 	<script  src="js/plugin/swiper.min.js"></script>
 	<script  src="js/common.js"></script>
 	<script  src="js/plugin/jquery.artDialog.js"></script>
-	<script>	
+	<script>
+	
+	$j(".common-store-car").css("display","block");	
      var mySwiperreplaypart02 = new Swiper('.replay-part02 .swiper-container', {
              pagination: '.replay-part02 .swiper-pagination',
              grabCursor: true,
@@ -411,8 +469,30 @@ monitoring solution.</p>
       	$j(this).siblings().find(".arrow-down-icon").addClass("arrow-down");
       	console.debug($j(".replay-part12-con .inside-page-con").find("img").eq(replay12Index))
       	$j(".replay-part12-inside-page-con").find("img").eq(replay12Index).show().siblings().hide();
+      	$j(".store-part01 .money").html('<span>'+$j(".store-part01 .money").html().split(".")[0]+'.</span><span class="small">'+
+		$j(".store-part01 .money").html().split('.')[1]+'</span>');
+	$j(".store-part02-item-left .money").html('<span>'+$j(".store-part02-item-left .money").html().split(".")[0]+'.</span><span class="small">'+
+		$j(".store-part02-item-left .money").html().split('.')[1]+'</span>');
+	$j(".store-part02-item-right .money").html('<span>'+$j(".store-part02-item-right .money").html().split(".")[0]+'.</span><span class="small">'+
+		$j(".store-part02-item-right .money").html().split('.')[1]+'</span>');
+	$j(".store-part03-item-left .money").html('<span>'+$j(".store-part03-item-left .money").html().split(".")[0]+'.</span><span class="small">'+
+		$j(".store-part03-item-left .money").html().split('.')[1]+'</span>');
+	$j(".store-part03-item-right .money").html('<span>'+$j(".store-part03-item-right .money").html().split(".")[0]+'.</span><span class="small">'+
+		$j(".store-part03-item-right .money").html().split('.')[1]+'</span>');
+	$j(".store-part04-item-left .money").html('<span>'+$j(".store-part04-item-left .money").html().split(".")[0]+'.</span><span class="small">'+
+		$j(".store-part04-item-left .money").html().split('.')[1]+'</span>');
+	$j(".store-part04-item-right .money").html('<span>'+$j(".store-part04-item-right .money").html().split(".")[0]+'.</span><span class="small">'+
+		$j(".store-part04-item-right .money").html().split('.')[1]+'</span>');
       })
      }else{
+
+     	$j(document).scroll(function (){
+         if ($j(document).scrollTop()>48){
+             $j(".common-fixed-box").stop().fadeOut(500);
+         }else{
+             $j(".common-fixed-box").stop().fadeOut(500);
+         }        
+     })  
        $j(".explore-btn").click(function () {
          $j(".replay-part12-item02").toggle();
          if ($j(".arrow-down-icon").hasClass("arrow-down")) {
