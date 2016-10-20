@@ -278,6 +278,16 @@
 					<p>2016 Zmodo.</p>
 				</li>
 			</ul>
+		</div>		
+		<div class="common-fixed-box clearfix">
+		<a class="common-back-top">
+			<img src="images/top-arrow.png" alt="" class="top-arrow">
+			<br>
+			TOP
+		</a>
+		<p class="common-fixed-name"></p>
+		<a class="common-buy-now" href="javascript:">Buy Now</a>
+		<a href="javascript:" class="common-store-car"><img src="images/car-hover.png" alt="" class="common-car-pic"></a>
 		</div>
 	</footer>
 <script  src="js/jquery.min.js"></script>
@@ -286,6 +296,8 @@
 <script  src="js/plugin/jquery.transit.min.js"></script>
 <script  src="js/common.js"></script>
 <script>
+            $j(".common-fixed-name").html("beam");
+          $j(".common-buy-now").css("display","block").attr("href","http://www.zmodo.com/beam/");
 	$j(".beam-part04-switch").find("li").hover(function(){
            var switchIndex=$j(this).index();
            $j(".beam-part04-pc").find("img").eq(switchIndex).show().siblings().hide();

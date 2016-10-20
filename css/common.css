@@ -1,15 +1,16 @@
-/*class命名规则：以字母加破折号的方式，例如，f-left*/
-/*img命名规则：以属性-位置的方式，例如，logo-nav   logo-foot*/
+/*class闁告稖妫勯幃鏇犳喆閸曨偄鐏熼柨娑欑煯娴滄帞鈧稒顨嗛惁婵嬪礉閻樼數澹冮柟鑸得ぐ鍧楁儍閸曨剚鐓欑€殿喖楠忕槐婵囩瑹鐎ｎ亶娲ら柨娑樼暫-left*/
+/*img闁告稖妫勯幃鏇犳喆閸曨偄鐏熼柨娑欑煯娴滄帞浠﹂悙绮瑰亾閿燂拷-濞达絽绉堕悿鍡涙儍閸曨剚鐓欑€殿喖楠忕槐婵囩瑹鐎ｎ亶娲ら柨娑橆唲ogo-nav   logo-foot*/
 *{margin:0px;padding:0px;border:0px;}
 ul,li{list-style-type:none;}
 a{text-decoration:none; outline:none;cursor: pointer;}
-a:hover{text-decoration:none;cursor: pointer;}
+a:link,a:visited,a:hover,a:active{cursor: pointer;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color: transparent;
+outline:none;text-decoration: none;}
 em{font-style: normal;}
 table{border-collapse: collapse;border-spacing: 0;border: 0;}
 input{font-size:inherit;vertical-align:middle;outline: none;}
 select{font-size:inherit;vertical-align:middle;outline: none;}
 
-/*补充公用class类  begin*/
+/*閻炴稏鍎遍崢鏍礂椤掑倹鏆廲lass缂侇偓鎷�  begin*/
 .f-left{float: left;}
 .f-right{float: right;}
 .clear{clear:both;}
@@ -20,9 +21,9 @@ select{font-size:inherit;vertical-align:middle;outline: none;}
 .padding-left-right-0{padding: 0px;}
 .opacity100{opacity: 1;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=$ieopacity)';filter:alpha(opacity=100);}
 .opacity0{opacity: 0;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=$ieopacity)';filter:alpha(opacity=0);}
-/*补充公用class类  end*/
+/*閻炴稏鍎遍崢鏍礂椤掑倹鏆廲lass缂侇偓鎷�  end*/
 
-/*网站字体、字号、颜色 begin*/
+/*缂傚啯鍨归悵顖溾偓娑欍仦缂嶅濡存担鍝ユ憻闁告瑦鐏氶埀顑跨窔椤や線鎳濋敓锟� begin*/
 @font-face {
   font-family: 'Roboto Thin';
   font-style: normal;
@@ -53,8 +54,8 @@ html{font-family:"Roboto Light","Myriad Set Pro","Helvetica Neue","Helvetica","A
 .footer-con{font-size: 0.7rem;color:#666666;}
 .banner-main-tit{font-family:"Roboto Thin"!important;font-size: 2.0rem;line-height: 2.2rem;margin-bottom: 1rem;}
 .banner-sub-tit{font-size: 2.0rem;line-height: 2.2rem;font-family:"Roboto Medium"!important;}
-.store-maintit{font-family:"Roboto Thin"!important;font-size: 2.4rem;line-height: 2.6rem;margin-bottom: 1rem;}
-.store-subtit{font-size: 1.1rem;line-height: 1.2rem;}
+.store-maintit{font-family:"Roboto Thin"!important;font-size: 2.4rem;line-height: 2.6rem;margin-bottom: 1.8rem;color:#333;}
+.store-subtit{font-size: 1.1rem;line-height: 1.2rem;color:#666;}
 .footer-con a{color:#666666;font-family:"Roboto Regular"!important;}
 .footer-con a:hover{color:#333333;}
 a{color:#000;text-decoration:none;}
@@ -62,39 +63,49 @@ a:hover,a:visited,a:active{text-decoration:none;}
 .maintitle{font-size: 1.9rem;line-height: 1.9rem;margin-bottom: 1.1rem;color:#333;text-align: center;}
 .subtitle{font-size: 1.1rem;line-height: 1.4rem;color:#666;}
 .banner-maintitle{font-size: 2.6rem;line-height: 3rem;font-family:"Roboto Thin"!important;}
-.banner-subtitle{font-size: 1.1rem;margin-top: 1.4rem;line-height: 1.4rem;}
-.buy-now{font-family:"Roboto Medium"!important;width:8.3rem;height: 2.15rem;background: #14b8e2;line-height: 2.15rem;display: inline-block;border-radius: 1.2rem;
-color:#fff;font-size: 0.9rem;text-align: center;margin-right: 25px;}
+.banner-subtitle{font-size: 1.1rem;margin-top: 1.75rem;line-height: 1.4rem;}
+.buy-now{font-family: "Roboto Regular"!important;width:8.3rem;height: 2.3rem;background: #14b8e2;line-height: 2.3rem;display: inline-block;border-radius: 1.2rem;color:#fff;font-size: 0.85rem;text-align: center;margin-right: 25px;}
 .buy-now:hover{background: #00cbff;color:#0082ac;}
 .watch-video-text,.watch-video-icon{display: inline-block;}
-.banner-point{margin-top: 4rem;}
+.banner-point{margin-top: 5rem;}
 .watch-video{display: inline-block;height: 43px;line-height: 43px;}
-.watch-video-text{font-family:"Roboto Medium"!important;font-size: 0.9rem;color:#fff;margin-right: 12px;}
+.watch-video-text{font-family: "Roboto Regular"!important;font-size: 0.85rem;color:#fff;margin-right: 12px;}
 .watch-video-icon{float: right;width:34px;height: 34px;line-height: 34px;text-align: center;background:transparent;border-radius: 50%;border: 2px solid #1cc7e9;margin-top: 3px;}
 .watch-video-icon.wvi-active{background: #1cc7e9;border: 2px solid #1cc7e9;}
-.watch-video-icon-arrow{display:inline-block;width: 0;height: 0;border-top: 9px solid transparent;border-left: 12px solid #1cc7e9;border-bottom: 9px solid transparent;margin: 8px 0px 0px 4px;}
+.watch-video-icon-arrow{display:inline-block;width: 0;height: 0;border-top: 8px solid transparent;border-left: 9px solid #1cc7e9;border-bottom: 8px solid transparent;margin: 9px 0px 0px 4px;}
 .watch-video-icon.wvi-active .watch-video-icon-arrow{border-top: 9px solid #1cc7e9;
-border-left: 12px solid #ffffff;border-bottom: 9px solid #1cc7e9;margin: 8px 0px 0px 5px;}
+border-left: 9px solid #ffffff;border-bottom: 8px solid #1cc7e9;margin: 9px 0px 0px 5px;}
 .explore-con{display: none;}
 .explore-con-phone{display: none;}
 .parametric-main-tit{font-size: 1.4rem;line-height: 1.5rem;color: #333;}
 .parametric-sub-tit{font-size: 0.9rem;line-height: 1rem;color:#666;}
-.explore-btn{display: inline-block;margin-top: 2.5rem;height: 4rem;}
+.explore-btn{display: inline-block;margin-top: 1.5rem;height: 4rem;}
 .arrow-down-icon{width:40px;height: 30px;display: inline-block;background: url(../images/down-arrow.png);opacity: 1;
 background-position: 0px -34px;margin-top: 0.8rem;}
+.footer-list{display: inline-block;}
 /*the common "class" in the website  end    by jennifer 2016.10.08 */
 
-/* 1000px以上 */
+/* 1000px濞寸姰鍎扮粭锟� */
 @media screen and (min-width:1024px) {
 html{font-size: 20px; }
 .common-btn{width:166px;height: 46px;background: #14b8e2;font-size: 16px;
-font-family:"Roboto Medium"!important;text-align: center;line-height: 46px;display: inline-block;color:#fff;border-radius: 23px;}
+font-family:"Roboto Regular"!important;text-align: center;line-height: 46px;display: inline-block;color:#fff;border-radius: 23px;}
+.common-btn:hover{background: #00cbff;color:#0082ac;}
 .hidden-small{display: none;}
 .inside-page-con{width:1000px;margin: 0 auto;}
 .large-block{display: block;}
 .small-block{display:none;}
+.common-back-top{width:3rem;height: 2rem;display: inline-block;text-align: center;line-height: 1rem;position: fixed;bottom:1rem;right:1rem;
+border-radius: 5px;background-color:rgba(200,200,200,0.8);font-size: 0.7rem;color:#fff;padding: 0.5rem 0rem;z-index: 999;display: none;}
+.common-buy-now{width:3rem;height: 2rem;display: inline-block;text-align: center;line-height: 1rem;position: fixed;bottom:5rem;right:1rem;
+border-radius: 5px;background:#16b9e2;font-size: 0.8rem;color:#fff;padding: 0.5rem 0rem;z-index: 999;display: none;}
+.common-back-top .top-arrow{margin-left: 3px;}
+.common-back-top:hover{background-color:rgba(146,146,146,0.8);}
+.common-store-car{width:3rem;height: 2rem;display: inline-block;text-align: center;line-height: 3rem;padding: 0.5rem 0rem;position: fixed;bottom:5rem;right:1rem;
+border-radius: 5px;color:#fff;padding: 0.5rem 0rem;z-index: 999;display: none;background:#16b9e2;}
+.common-car-pic{margin-left: 3px;}
 }
-/* 768px到999px   */
+/* 768px闁告帪鎷�999px   */
 @media screen and (min-width:769px) and (max-width:1023px) {
 html{font-size: 18px;}
 .nav-con{font-size: 0.86rem;}
@@ -103,14 +114,24 @@ html{font-size: 18px;}
 .footer-con a:hover{color:#333333;}
 .hidden-small{display: none;}
 .common-btn{width:166px;height: 46px;background: #14b8e2;font-size: 16px;
-font-family:"Roboto Medium"!important;text-align: center;line-height: 46px;display: inline-block;color:#fff;border-radius: 23px;}
+font-family:"Roboto Regular"!important;text-align: center;line-height: 46px;display: inline-block;color:#fff;border-radius: 23px;}
+.common-btn:hover{background: #00cbff;color:#0082ac;}
 .inside-page-con{width:98%;padding: 0 1%;}
 .hidden-769-1023{display: none;}
 .show-769-1023{display: block;}
 .large-block{display: block;}
 .small-block{display:none;}
+.common-back-top{width:3rem;height: 2rem;display: inline-block;text-align: center;line-height: 1rem;position: fixed;bottom:1rem;right:1rem;
+border-radius: 5px;background-color:rgba(200,200,200,0.8);font-size: 0.7rem;color:#fff;padding: 0.5rem 0rem;z-index: 999;display: none;}
+.common-buy-now{width:3rem;height: 2rem;display: inline-block;text-align: center;line-height: 1rem;position: fixed;bottom:5rem;right:1rem;
+border-radius: 5px;background:#16b9e2;font-size: 0.8rem;color:#fff;padding: 0.5rem 0rem;z-index: 999;display: none;}
+.common-back-top .top-arrow{margin-left: 3px;}
+.common-back-top:hover{background-color:rgba(146,146,146,0.8);}
+.common-store-car{width:3rem;height: 2rem;display: inline-block;text-align: center;line-height: 3rem;padding: 0.5rem 0rem;position: fixed;bottom:5rem;right:1rem;
+border-radius: 5px;color:#fff;padding: 0.5rem 0rem;z-index: 999;display: none;background:#16b9e2;}
+.common-car-pic{margin-left: 3px;}
 }
-/*768px以下  iphone 6p  iphone 6sp  iphone 7p*/
+/*768px濞寸姰鍎扮粭锟�  iphone 6p  iphone 6sp  iphone 7p*/
 @media screen and (max-width:768px){
 html{font-size: 16px; }
 .nav-con{font-size: 1.2rem;}
@@ -118,13 +139,14 @@ html{font-size: 16px; }
 .footer-con a{color:#333333;width:100%;display: inline-block;}
 .footer-con a:hover{color:#333333;}
 .hidden-large{display: none;}
-.common-btn{width:8rem;height:3rem;background: #14b8e2;font-size:1.0rem;
-font-family:"Roboto Medium"!important;text-align: center;line-height:3rem;display: inline-block;color:#fff;border-radius: 23px;}
-.inside-page-con{width:94%;padding: 0 3%;}
+.common-btn{font-family: "Roboto Regular"!important;width:8.3rem;height: 2.3rem;background: #14b8e2;line-height: 2.3rem;
+display: inline-block;border-radius: 1.2rem;color:#fff;font-size: 0.85rem;text-align: center;}
+.common-btn:hover{background: #00cbff;color:#0082ac;}
+.inside-page-con{width: 92%;padding: 0 4%;}
 .bg-phone{width:100%;max-width: 100%;}
-.banner-maintitle{font-size: 2.6rem;font-family:"Roboto Thin"!important;}
+.banner-maintitle{font-size: 1.9rem;line-height:2.5rem;font-family:"Roboto Thin"!important;}
 .banner-subtitle{font-size: 1.1rem;margin-top: 1.4rem;}
-.watch-video{margin-top: 2rem;padding-left: 8px;}
+.watch-video{margin-top: 0.8rem;padding-left: 8px;}
 .watch-video-icon-arrow{border-top: 4px solid transparent;border-left: 6px solid #1cc7e9;border-bottom: 4px solid transparent;margin: 5px 0px 0px 1px;}
 .watch-video-icon{width:17px;height: 17px;line-height: 17px;margin-top: 9px;}
 .video-close-phone{position: fixed; right: 20px; top: 30px; z-index: 3001; display: block; color: rgb(255, 255, 255); font-size: 24px;display: none;}
@@ -132,6 +154,17 @@ font-family:"Roboto Medium"!important;text-align: center;line-height:3rem;displa
 .arrow-down-icon{background: url(../images/down-arrow.png);background-position: 0px 0px;}
 .large-block{display:none;}
 .small-block{display:block;}
+.common-fixed-box{min-height:3.5rem;line-height:3.5rem;width:100%;position: fixed;top:0px;left:0px;z-index: 999;
+  background-color: rgba(247,247,247,0.95);border-bottom: 1px solid rgba(255,255,255,0.95);display: none;}
+.common-back-top{display: none;position: static;}
+.common-buy-now{display: none;position: static;float: right;margin-right: 15px;width:6rem;height: 2.3rem;line-height: 2.3rem;margin-top: 0.6rem;text-align: center;
+background: #14b8e2;border-radius: 5px;color:#fff;}
+.common-store-car{display: none;position: static;float: right;margin-right: 15px;}
+.common-fixed-name{float: left;margin-left: 15px;font-size: 1.3rem;color:#14b8e2;}
+.pivot-part02 .subtitle{width: 70%;margin: 0 auto;margin-top: 1rem;line-height: 1.6rem;}
+.pivot-part02 .pivot-press .press-item-name{font-size: 1.4rem;}
+.maintitle{font-size: 1.5rem;line-height: 1.7rem;}
+.buy-now{margin-right: 0px;}
 }
 /* iphone 6   iphone 6s  iphone 7*/
 @media screen and (max-width:375px) {
@@ -150,7 +183,7 @@ html{font-size: 12px; }
 .footer-con a:hover{color:#333333;}
 .common-btn{width:9rem;}
 }
-/*网站字体、字号、颜色 end*/
+/*缂傚啯鍨归悵顖溾偓娑欍仦缂嶅濡存担鍝ユ憻闁告瑦鐏氶埀顑跨窔椤や線鎳濋敓锟� end*/
 
 /*the common dialog    begin    by jennifer 2016.10.08 */
 body { _margin:0; _height:100%; /*IE6 BUG*/ }

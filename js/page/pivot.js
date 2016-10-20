@@ -220,7 +220,7 @@
              })
          pivotAni04();
          // the animation of the fourth screen on the pc  end until 2016.10.11  written by jennifer
-        
+     
      } else {
 // the animation of the first screen on the phone  begin  from  2016.10.09  written by jennifer	 	
          var tag = document.createElement('script');
@@ -265,7 +265,15 @@
              paginationClickable: true,
              paginationType: 'bullets'
          });
-// the animation of the second screen on the phone end until 2016.10.09  written by jennifer	     
+// the animation of the second screen on the phone end until 2016.10.09  written by jennifer	  
+$j(".explore-btn").click(function(){
+         $j(".explore-con").toggle();
+         if($j(".arrow-down-icon").hasClass("arrow-down")){
+             $j(".arrow-down-icon").removeClass("arrow-down");
+         }else{
+             $j(".arrow-down-icon").addClass("arrow-down");
+         }
+     })      
      }
      // the animation of the third screen on the pc  begin from 2016.10.09  written by jennifer
      function pivotAni03() {
@@ -350,6 +358,12 @@
          if ($j(this).hasClass("pivot-part07-active")) {
          } else {
              $j(this).addClass("pivot-part07-active").parent().siblings().find("a").removeClass("pivot-part07-active");
+         }
+     });
+     $j(".pivot-rotate-btn").click(function () {
+         if ($j(this).hasClass("pivot-part05-active")) {
+         } else {
+             $j(this).addClass("pivot-part05-active").siblings(".pivot-rotate-btn").removeClass("pivot-part05-active");
          }
      });
 // the animation of the seventh screen on the pc  end  until  2016.10.09  written by jennifer

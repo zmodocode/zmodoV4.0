@@ -292,7 +292,7 @@
 	<section class="product-greet greet-part09">
 		<div class="inside-page-con">
 			<img src="images/greet/06.png" alt="" class="hidden-large bg-phone" width="100%">
-			<img src="images/greet/23.png" alt="" class="hidden-small bg-phone">
+			<img src="images/greet/35.jpg" alt="" class="hidden-small bg-phone">
 			<div class="greet-part09-con">
 			<a href="" class="common-btn">Buy Now</a>
 			<a href="javascript:" class=" explore-btn">
@@ -300,9 +300,9 @@
 				<span class=" arrow-down  arrow-down-icon"></span>
 			</a>
 			</div>
-			<img src="images/greet/07.jpg" alt="" class="hidden-large explore-con" width="100%">			
-			<img src="images/greet/22.jpg" alt="" class="hidden-small explore-con-phone bg-phone">
+			<img src="images/greet/07.jpg" alt="" class="hidden-large explore-con" width="100%">						
 		</div>
+		<img src="images/greet/22.jpg" alt="" class="hidden-small explore-con-phone bg-phone">
 	</section>	
 	<div id="player" style="position:fixed;top:0px;left:0px;z-index:3000;"></div>                                
 	<footer  id="zmodo-footer">
@@ -375,6 +375,16 @@
 					<p>2016 Zmodo.</p>
 				</li>
 			</ul>
+		</div>		
+		<div class="common-fixed-box clearfix">
+		<a class="common-back-top">
+			<img src="images/top-arrow.png" alt="" class="top-arrow">
+			<br>
+			TOP
+		</a>
+		<p class="common-fixed-name"></p>
+		<a class="common-buy-now" href="javascript:">Buy Now</a>
+		<a href="javascript:" class="common-store-car"><img src="images/car-hover.png" alt="" class="common-car-pic"></a>
 		</div>
 	</footer>
 <script  src="js/jquery.min.js"></script>
@@ -383,6 +393,8 @@
 <script  src="js/plugin/jquery.artDialog.js"></script>
 <script>
 	 var screenWidth = $j(document).width();
+	  $j(".common-fixed-name").html("greet");
+	  $j(".common-buy-now").css("display","block").attr("href","http://www.zmodo.com/new-zmodo-smart-wifi-doorbell.html/");
      if (screenWidth - 768 > 0) {
 // the animation of the first screen on the pc   begin   from   2016.10.09    written by jennifer	
          $j(".watch-video").mouseover(function () {

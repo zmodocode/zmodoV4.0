@@ -127,19 +127,19 @@
 	        	<ul class="swiper-wrapper replay-part02-wrapper clearfix">
 	        		<li class="swiper-slide replay-part02-slide">
 	        			<img src="images/replay/14.jpg" alt="" class="hidden-large">
-	        			<img src="images/replay/20.jpg" alt="" class="hidden-small">
+	        			<img src="images/replay/20.jpg" alt="" class="hidden-small bg-phone">
 	        		</li>
 	        		<li class="swiper-slide replay-part02-slide">
 	        			<img src="images/replay/15.jpg" alt="" class="hidden-large">
-	        			<img src="images/replay/31.jpg" alt="" class="hidden-small">
+	        			<img src="images/replay/31.jpg" alt="" class="hidden-small bg-phone">
 	        		</li>
 	        		<li class="swiper-slide replay-part02-slide">
 	        			<img src="images/replay/16.jpg" alt="" class="hidden-large">
-	        			<img src="images/replay/32.jpg" alt="" class="hidden-small">
+	        			<img src="images/replay/32.jpg" alt="" class="hidden-small bg-phone">
 	        		</li>
 	        		<li class="swiper-slide replay-part02-slide">
 	        			<img src="images/replay/17.jpg" alt="" class="hidden-large">
-	        			<img src="images/replay/34.jpg" alt="" class="hidden-small">
+	        			<img src="images/replay/34.jpg" alt="" class="hidden-small bg-phone">
 	        		</li>
 	        	</ul>
 	        	<div class="dots  swiper-pagination clearfix"></div>
@@ -219,7 +219,7 @@ so you're never in the dark to what's going on.</p>
 		                      <p class="subtitle">Security made simple.</p>	
 		                      </div>
 	        			<img src="images/replay/08.jpg" alt="" class="hidden-large">
-	        			<img src="images/replay/48.jpg" alt="" class="hidden-small">
+	        			<img src="images/replay/48.jpg" alt="" class="hidden-small bg-phone">
 	        		</li>
 	        		<li class="swiper-slide replay-part09-slide">
 	        			<div class="inside-page-con">
@@ -227,7 +227,7 @@ so you're never in the dark to what's going on.</p>
 		                      <p class="subtitle">Security made simple.</p>	
 		                      </div>
 	        			<img src="images/replay/18.jpg" alt="" class="hidden-large">
-	        			<img src="images/replay/49.jpg" alt="" class="hidden-small">
+	        			<img src="images/replay/49.jpg" alt="" class="hidden-small bg-phone">
 	        		</li>
 	        	</ul>
 	        	<div class="inside-page-con">
@@ -341,6 +341,16 @@ so you're never in the dark to what's going on.</p>
 					<p>2016 Zmodo.</p>
 				</li>
 			</ul>
+		</div>		
+		<div class="common-fixed-box clearfix">
+		<a class="common-back-top">
+			<img src="images/top-arrow.png" alt="" class="top-arrow">
+			<br>
+			TOP
+		</a>
+		<p class="common-fixed-name"></p>
+		<a class="common-buy-now" href="javascript:">Buy Now</a>
+		<a href="javascript:" class="common-store-car"><img src="images/car-hover.png" alt="" class="common-car-pic"></a>
 		</div>
 	</footer>
 <script  src="js/jquery.min.js"></script>
@@ -348,6 +358,8 @@ so you're never in the dark to what's going on.</p>
 <script  src="js/common.js"></script>
 <script  src="js/plugin/jquery.artDialog.js"></script>
 <script>	
+    $j(".common-fixed-name").html("replay");
+    $j(".common-buy-now").css("display","block").attr("href","http://www.zmodo.com/zmodo-4-channel-720p-wireless-mini-nvr-kit-with-4-ip-cameras-1tb-hdd.html");
      var mySwiperreplaypart02 = new Swiper('.replay-part02 .swiper-container', {
              pagination: '.replay-part02 .swiper-pagination',
              grabCursor: true,
